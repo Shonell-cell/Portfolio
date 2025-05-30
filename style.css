@@ -9,7 +9,7 @@ body{
     src: url(fonts/fonts/Outfit-Regular.ttf);
 }
 nav{
-    width:99%;
+    width:100%;
     height:5vh;
     text-align: center;
     position:fixed;
@@ -162,7 +162,11 @@ footer{
 
 @media (max-width: 600px) {
     body {
+        width: 100%;
         font-size: 14px;
+        margin: 0;
+        padding: 0;
+
         
     }
     nav {
@@ -198,8 +202,10 @@ footer{
     #herosection {
         padding-top: 200px;
         height: 500px;
-        border-radius: 0;
+        border-radius: 20px;
         width:100%;
+        background-color: sienna;
+        margin: 20px;
 
     }
     footer {
