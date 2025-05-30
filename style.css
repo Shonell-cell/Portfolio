@@ -182,65 +182,90 @@ footer{
     transition-duration: 1s;
 }
 
-@media (max-width: 600px) {
-    body {
-        width: 100%;
-        font-size: 14px;
-        margin: 0;
-        padding: 0;
+/* Responsive styles for tablets and below */
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        gap: 16px;
+        height: auto;
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+    #herosection {
+        padding-top: 80px;
+        background-color: white;
+    }
+    #hero, #wow {
+        padding: 24px 10px;
+    }
+    #hh {
+        font-size: 1.5rem;
+    }
+    #para {
+        font-size: 1rem;
+    }
+}
 
-        
+/* Responsive styles for mobile */
+@media (max-width: 900px) {
+    body{
+        background-color: rgb(255, 255, 255);
     }
     nav {
-        width: 100%;
-        padding-top: 20px;
-        font-size: 12px;
-        position: fixed;
-       
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 10px 0;
+        position: static;
+        font-size: 0.95rem;
+        background-color: white;
     }
-    #image, #para {
-        width: 90%;
-        float: none;
+    #herosection {
+        padding-top: 140px;
+        min-height: 40vh;
+        background-color: white;
+    }
+    #hr h1 {
+        font-size: 2rem;
+    }
+    #hero, #wow {
+        padding: 12px 4px;
+        margin: 20px 4px 0 4px;
+        border-radius: 12px;
+    }
+    #hh {
+        font-size: 1.1rem;
+        transform: translate(30px, 0);
+    }
+    #para {
+        font-size: 15px;
         margin: 10px auto;
-        display: block;
+       width:300px;
+       transform: translate(30px, 0);
 
     }
-    #image{
-        width: 70%;
-        border-radius: 20px;
-        margin-top: 150px;
-       
-    }
-    #para{
-        width:80%;
-        padding-left: 20px;
-        padding-top: 70px;
-    ;
-    }
-    button {
+    #projects {
         width: 40%;
+        font-size: 1rem;
+        padding: 12px 0;
         margin: 20px auto;
         display: block;
     }
-    #herosection {
-        padding-top: 200px;
-        height: 500px;
-        border-radius: 20px;
-        width:100%;
-        background-color: sienna;
-       
-
-    }
-    footer {
-        font-size: 12px;
-        padding-top: 10px;
-        height: auto;
-        position: fixed;
-        width:100%;
     
+        
+     
+    
+    footer {
+        font-size: 0.95rem;
+        border-radius: 0;
+        margin-top: 20px;
+        padding: 16px 4px;
     }
+}
 
-    #wow {
-        height: 100px;
-        margin-bottom: 70px; }
-    }
+/* Make images and videos responsive if you have any */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
