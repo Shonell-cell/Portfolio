@@ -19,9 +19,12 @@ nav{
     animation-name:navan;
     animation-duration:1s;
 }
+#hr{
+font-size: 20px;
+}
 #hr:hover{
     color: rgb(145, 230, 35);
-    
+  
     cursor: pointer;
     transition: ease-in-out;
     transition-duration: 1s;
@@ -49,8 +52,11 @@ padding-right: 5%;
     padding-top: 20px;
     font-family: outfit;
     font-size: 40px;
-    color: black;
+    color: rgb(0, 0, 0);
     transform: translate(200PX , 59PX);
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 #para{
     width:40;
@@ -59,6 +65,9 @@ padding-right: 5%;
     width: 600px;
     margin-LEFT: 180px;
     margin-top: 70px;
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 
 }
 #ip{
@@ -89,6 +98,9 @@ border-radius: 20px;;
     
     transition: ease-in-out 1s;
     cursor: pointer;
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 button:hover{
     color: rgb(255, 255, 255);
@@ -164,6 +176,18 @@ footer{
         transform: translateY(0);
     }
 }
+    @keyframes appear{
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }
+}
+
+
 #wow{
     height: 300px;
     width:100%;
