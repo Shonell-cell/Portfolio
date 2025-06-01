@@ -19,6 +19,11 @@ nav{
     font-size: 15px;
     animation-name:navan;
     animation-duration:1s;
+    background: rgba(255, 255, 255, 0.4);        
+    backdrop-filter: blur(12px);                 
+    -webkit-backdrop-filter: blur(12px);         
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
+    z-index: 1000;                               
              
 }
 #hr{
@@ -329,11 +334,17 @@ footer{
     nav {
         flex-direction: column;
         gap: 10px;
-        height: auto;
+        height: 7vh;
         padding: 10px 0;
-        position: static;
+        position: fixed;
+        padding-top: 28px;
         font-size: 0.95rem;
         background-color: white;
+         background: rgba(255, 255, 255, 0.4);        
+    backdrop-filter: blur(12px);                 
+    -webkit-backdrop-filter: blur(12px);         
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
+    z-index: 1000;     
     }
     #herosection {
         padding-top: 140px;
@@ -397,8 +408,13 @@ img, video {
         height: auto;
         padding: 18px 0;
         font-size: 1.1rem;
-        position: static;
-        background-color: #fff;
+        position: fixed;
+         background: rgba(255, 255, 255, 0.4);        
+    backdrop-filter: blur(12px);                 
+    -webkit-backdrop-filter: blur(12px);         
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
+    z-index: 1000;     
+        
     }
     #herosection {
         padding-top: 120px;
