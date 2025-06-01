@@ -2,6 +2,7 @@ body{
     background-color:rgb(255, 255, 255);
     color:rgb(19, 19, 19);
     font-family:outfit;
+    cursor:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="12" fill="black" /></svg>') 16 16, auto;
    
 }
 @font-face{
@@ -18,6 +19,7 @@ nav{
     font-size: 15px;
     animation-name:navan;
     animation-duration:1s;
+             
 }
 #hr{
 font-size: 20px;
