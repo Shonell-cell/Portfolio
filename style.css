@@ -49,6 +49,7 @@ padding-right: 5%;
 }
 
 
+
 #hh{
     
     padding-top: 20px;
@@ -202,10 +203,55 @@ footer{
 #wow a{
     color: black;
 }
+
+#wow{
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
 #wow a:hover{
     color:rgb(118, 218, 18);
     transition: ease-in-out;
     transition-duration: 1s;
+}
+.dt{
+    list-style: none;
+    transform: translateX(700px);
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+#dt{
+    transform: translateX(800px);
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+#dp{
+    transform: translateX(800px);
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.dtt{
+    list-style: none;
+    transform: translateX(200px);
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+    #dtf{
+    transform: translateX(170px);
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    }
+#dtt{
+    transform: translateX(200px);
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 /* Responsive styles for tablets and below */
@@ -232,7 +278,57 @@ footer{
     }
 }
 
-/* Responsive styles for mobile */
+
+
+
+/* Responsive styles for tablets and below */
+@media (max-width: 900px) {
+    /* ...existing styles... */
+    #dt, #dtt, #dtf {
+        transform: none;
+        font-size: 1.1rem;
+        margin: 20px 0 10px 0;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .dt, .dtt {
+        transform: none;
+        margin-left: 0;
+        padding-left: 20px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    #dt, #dtt, #dtf {
+        transform: none;
+        font-size: 25px;
+        margin: 16px 0 8px 0;
+        text-align: left;
+        padding-left: 6px;
+    }
+    #dtf{
+        font-size: 1rem;
+    }
+    
+    .dt, .dtt {
+        transform: none;
+        margin-left: 0;
+        padding-left: 12px;
+    }
+    #dt{
+        transform:translateX(250px);
+        font-size: 25px;
+        
+        
+    }
+    #dp{
+        transform:translateX(120px);
+        font-size: 25px;
+    }
+}
+
+
 @media (max-width: 900px) {
     body{
         background-color: rgb(255, 255, 255);
@@ -260,7 +356,7 @@ footer{
         border-radius: 12px;
     }
     #hh {
-        font-size: 1.1rem;
+        font-size: 25px;
         transform: translate(30px, 0);
     }
     #para {
@@ -290,7 +386,11 @@ footer{
     }
 }
 
-/* Make images and videos responsive if you have any */
+ul{
+    list-style: none;
+}
+
+
 img, video {
     max-width: 100%;
     height: auto;
