@@ -255,7 +255,7 @@ footer{
 }
 
 /* Responsive styles for tablets and below */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     nav {
         flex-direction: column;
         gap: 16px;
@@ -282,7 +282,7 @@ footer{
 
 
 /* Responsive styles for tablets and below */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     /* ...existing styles... */
     #dt, #dtt, #dtf {
         transform: none;
@@ -299,37 +299,30 @@ footer{
 }
 
 
-@media (max-width: 900px) {
-    #dt, #dtt, #dtf {
-        transform: none;
+@media (max-width: 600px) {
+    #dt, #dtt, #dtf, #dp {
+        transform: none !important;
         font-size: 25px;
         margin: 16px 0 8px 0;
         text-align: left;
-        padding-left: 6px;
+        padding-left: 8px;
+        width: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
     }
     #dtf{
-        font-size: 1rem;
+       font-size: 1rem;
     }
-    
     .dt, .dtt {
-        transform: none;
+        transform: none !important;
         margin-left: 0;
-        padding-left: 12px;
-    }
-    #dt{
-        transform:translateX(250px);
-        font-size: 25px;
-        
-        
-    }
-    #dp{
-        transform:translateX(120px);
-        font-size: 25px;
+        padding-left: 16px;
     }
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     body{
         background-color: rgb(255, 255, 255);
     }
@@ -395,4 +388,69 @@ img, video {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    nav {
+        flex-direction: column;
+        gap: 18px;
+        height: auto;
+        padding: 18px 0;
+        font-size: 1.1rem;
+        position: static;
+        background-color: #fff;
+    }
+    #herosection {
+        padding-top: 120px;
+        min-height: 50vh;
+        background-color: #fff;
+    }
+    #hr h1 {
+        font-size: 2.2rem;
+    }
+    #hero, #wow {
+        padding: 20px 16px;
+        margin: 24px 8px 0 8px;
+        border-radius: 16px;
+    }
+    #hh {
+        font-size: 2rem;
+        transform: translate(20px, 0);
+    }
+    #para {
+        font-size: 1.1rem;
+        margin: 16px auto;
+        width: 80%;
+        transform: translate(20px, 0);
+    }
+    #dt, #dtt, #dtf, #dp {
+        transform: none !important;
+        font-size: 1.3rem;
+        margin: 18px 0 10px 0;
+        text-align: left;
+        padding-left: 16px;
+        width: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+    .dt, .dtt {
+        transform: none !important;
+        margin-left: 0;
+        padding-left: 24px;
+    }
+    #projects {
+        width: 20%;
+        font-size: 1rem;
+        padding: 12px 0;
+        margin: 20px auto;
+        display: block;
+    }
+    footer {
+        font-size: 1rem;
+        border-radius: 0;
+        margin-top: 24px;
+        padding: 18px 8px;
+        margin-bottom: -20px;
+    }
 }
