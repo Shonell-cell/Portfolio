@@ -3,7 +3,7 @@ body{
     color:rgb(19, 19, 19);
     font-family:outfit;
     cursor:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="12" fill="black" /></svg>') 16 16, auto;
-   
+   overflow-x: hidden;
 }
 @font-face{
     font-family: outfit;
@@ -40,6 +40,7 @@ nav{
     top:0;                            
              
 }
+
 #hr{
 font-size: 20px;
 display:inline-block
@@ -470,6 +471,9 @@ img, video {
         max-width: 100%;
         box-sizing: border-box;
         overflow-wrap: break-word;
+    }
+    #dtf{
+        font-size: 1rem;
     }
     .dt, .dtt {
         transform: none !important;
@@ -912,4 +916,8 @@ footer{
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
 }
+}
+body.dark-mode {
+    background-color: #111 !important;
+    color: #fff !important;
 }
