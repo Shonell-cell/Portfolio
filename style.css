@@ -17,6 +17,7 @@ body{
  
 
 nav{
+    margin-top: 7px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -371,6 +372,7 @@ footer{
     }
     #hr h1 {
         font-size: 2rem;
+        padding-top: 90px;
     }
     #hero, #wow {
         padding: 12px 4px;
@@ -491,7 +493,7 @@ img, video {
 }
 
 
-@media (max-width: 1024px) and (min-width:900px) {
+@media (max-width: 1024px) and (min-width: 769px) {
     nav {
         flex-direction: row;
         justify-content: cente;
