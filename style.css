@@ -9,13 +9,25 @@ body{
     font-family: outfit;
     src: url(fonts/fonts/Outfit-Regular.ttf);
 }
+
+ #navigation{
+    display:flex;
+    justify-content: center;
+ }
+ 
+
 nav{
-    width:100%;
-    height:10vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width:50%;
+    height:7vh;
+    gap: 17%;
     text-align: center;
     position:fixed;
-    border-radius: 10px;
-    padding-top: 40px;
+    border-radius: 40px ;
+   justify-content: center;
     font-size: 15px;
     animation-name:navan;
     animation-duration:1s;
@@ -23,11 +35,13 @@ nav{
     backdrop-filter: blur(12px);                 
     -webkit-backdrop-filter: blur(12px);         
     box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
-    z-index: 1000;                               
+    z-index: 1000;   
+    top:0;                            
              
 }
 #hr{
 font-size: 20px;
+display:inline-block
 }
 #hr:hover{
     color: rgb(145, 230, 35);
@@ -332,13 +346,17 @@ footer{
         background-color: rgb(255, 255, 255);
     }
     nav {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-self: space-between;
+        align-items: center;
+        
         gap: 10px;
         height: 7vh;
         padding: 10px 0;
         position: fixed;
-        padding-top: 28px;
-        font-size: 0.95rem;
+       width: 70%;
+        font-size: 12px;
         background-color: white;
          background: rgba(255, 255, 255, 0.4);        
     backdrop-filter: blur(12px);                 
@@ -401,13 +419,14 @@ img, video {
     display: block;
 }
 
-@media (max-width: 900px) and (min-width: 601px) {
+@media (max-width: 900px) and (min-width: 600px) {
     nav {
-        flex-direction: column;
-        gap: 18px;
-        height: auto;
-        padding: 18px 0;
-        font-size: 1.1rem;
+        flex-direction: row;
+        justify-content:center;
+        gap: 40px;
+        height: 11vh;
+
+        font-size: 13px;
         position: fixed;
          background: rgba(255, 255, 255, 0.4);        
     backdrop-filter: blur(12px);                 
@@ -469,4 +488,426 @@ img, video {
         padding: 18px 8px;
         margin-bottom: -20px;
     }
+}
+
+
+@media (max-width: 1024px) and (min-width:900px) {
+    nav {
+        flex-direction: row;
+        justify-content: cente;
+        gap:80px;
+        height: 6vh;
+        padding: 18px 0;
+        font-size: 13px;
+        position: fixed;
+         background: rgba(255, 255, 255, 0.4);        
+    backdrop-filter: blur(12px);                 
+    -webkit-backdrop-filter: blur(12px);         
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
+    z-index: 1000;     
+        
+    }
+    #herosection {
+        padding-top: 120px;
+        min-height: 50vh;
+        background-color: #fff;
+    }
+    #hr h1 {
+        font-size: 2.2rem;
+    }
+    #hero, #wow {
+        padding: 20px 16px;
+        margin: 24px 8px 0 8px;
+        border-radius: 16px;
+    }
+    #hh {
+        font-size: 2rem;
+        transform: translate(20px, 0);
+    }
+    #para {
+        font-size: 1.1rem;
+        margin: 16px auto;
+        width: 80%;
+        transform: translate(20px, 0);
+    }
+    #dt, #dtt, #dtf, #dp {
+        transform: none !important;
+        font-size: 1.3rem;
+        margin: 18px 0 10px 0;
+        text-align: left;
+        padding-left: 16px;
+        width: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+     #dtf{
+         font-size: 1rem;
+     }
+    .dt, .dtt {
+        transform: none !important;
+        margin-left: 0;
+        padding-left: 24px;
+    }
+    #projects {
+        width: 20%;
+        font-size: 1rem;
+        padding: 12px 0;
+        margin: 20px auto;
+        display: block;
+    }
+    footer {
+        font-size: 1rem;
+        border-radius: 0;
+        margin-top: 24px;
+        padding: 18px 8px;
+        margin-bottom: -20px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1024px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 90px;
+        height: 13vh;
+        font-size: 13px;
+        position: fixed;
+         background: rgba(255, 255, 255, 0.4);        
+    backdrop-filter: blur(12px);                 
+    -webkit-backdrop-filter: blur(12px);         
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
+    z-index: 1000;     
+        
+    }
+    #herosection {
+        padding-top: 120px;
+        min-height: 50vh;
+        background-color: #fff;
+    }
+    #hr h1 {
+        font-size: 2.2rem;
+    }
+    #hero, #wow {
+        padding: 20px 16px;
+        margin: 24px 8px 0 8px;
+        border-radius: 16px;
+    }
+    #hh {
+        font-size: 2rem;
+        transform: translate(20px, 0);
+    }
+    #para {
+        font-size: 1.1rem;
+        margin: 16px auto;
+        width: 80%;
+        transform: translate(20px, 0);
+    }
+    #dt, #dtt, #dtf, #dp {
+        transform: none !important;
+        font-size: 1.3rem;
+        margin: 18px 0 10px 0;
+        text-align: left;
+        padding-left: 16px;
+        width: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+    .dt, .dtt {
+        transform: none !important;
+        margin-left: 0;
+        padding-left: 24px;
+    }
+    #projects {
+        width: 20%;
+        font-size: 1rem;
+        padding: 12px 0;
+        margin: 20px auto;
+        display: block;
+    }
+    footer {
+        font-size: 1rem;
+        border-radius: 0;
+        margin-top: 24px;
+        padding: 18px 8px;
+        margin-bottom: -20px;
+    }
+}
+
+
+@media (max-width:1920px) and (min-width: 1200px) {
+body{
+    background-color:rgb(255, 255, 255);
+    color:rgb(19, 19, 19);
+    font-family:outfit;
+    cursor:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="12" fill="black" /></svg>') 16 16, auto;
+   
+}
+@font-face{
+    font-family: outfit;
+    src: url(fonts/fonts/Outfit-Regular.ttf);
+}
+
+ #navigation{
+    display:flex;
+    justify-content: center;
+ }
+ 
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width:50%;
+    height:13vh;
+    text-align: center;
+    position:fixed;
+    border-radius: 40px ;
+   justify-content: center;
+    font-size: 15px;
+    animation-name:navan;
+    animation-duration:1s;
+    background: rgba(255, 255, 255, 0.4);        
+    backdrop-filter: blur(12px);                 
+    -webkit-backdrop-filter: blur(12px);         
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
+    z-index: 1000;   
+    top:0;                            
+             
+}
+#hr{
+font-size: 20px;
+display:inline-block
+}
+#hr:hover{
+    color: rgb(145, 230, 35);
+  
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    
+    
+}
+a:hover{
+    color: rgb(145, 230, 35);
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+#txt{
+padding-left: 5%;
+padding-right: 5%;
+
+}
+
+
+
+#hh{
+    
+    padding-top: 20px;
+    font-family: outfit;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    transform: translate(200PX , 59PX);
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+#para{
+    width:40;
+    font-size: 15px;
+    float: LEFT;
+    width: 600px;
+    margin-LEFT: 180px;
+    margin-top: 70px;
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+
+}
+#ip{
+    font-family: outfit;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+}
+#hero{
+    height:500px;
+}
+button{
+    background-color: rgb(255, 255, 255);
+    width:100px;
+    margin-left:565px;
+    width:200px;
+    height:40px;
+    font-family: outfit;
+    margin-bottom: 10%;
+    border: none;
+    
+}
+button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+border-radius: 20px;;
+    
+    transition: ease-in-out 1s;
+    cursor: pointer;
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color:rgb(47, 204, 15);
+    cursor: pointer;
+    transition: ease-in-out 1s;
+    
+    
+}
+#herosection{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height:500px;
+   margin-top: -173px;
+   border-radius: 4px;
+   text-align: center;
+    padding-top: 300px;
+    font-family: outfit;
+    
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 120px;
+    
+    bottom: 0;
+    text-align: center;
+    padding-top: 30px;
+    font-family: outfit;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+   
+}
+#linkdin{
+    color:rgb(255, 255, 255);
+    display: inline-block;
+    background-color:black;
+    padding: 10px;
+    margin-right: 10px;
+    
+}
+#linkdin:hover{
+    background-color:rgb(114, 202, 25);
+    color: black;
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+@keyframes navan{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#hr{
+    animation-name: text;
+    animation-duration: 3s;
+}
+
+@keyframes text{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    @keyframes appear{
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }
+}
+
+
+#wow{
+    height: 300px;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 80px 0px;
+    border-radius: 20px;
+}
+#wow a{
+    color: black;
+}
+
+#wow{
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+#wow a:hover{
+    color:rgb(118, 218, 18);
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+.dt{
+    list-style: none;
+    transform: translateX(700px);
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+#dt{
+    transform: translateX(800px);
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+#dp{
+    transform: translateX(800px);
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.dtt{
+    list-style: none;
+    transform: translateX(200px);
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+    #dtf{
+    transform: translateX(170px);
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    }
+#dtt{
+    transform: translateX(200px);
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
 }
