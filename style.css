@@ -1,10 +1,21 @@
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color:rgb(255, 255, 255);
     color:rgb(19, 19, 19);
     font-family:outfit;
     cursor:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="12" fill="black" /></svg>') 16 16, auto;
    overflow-x: hidden;
+   
 }
+
 @font-face{
     font-family: outfit;
     src: url(fonts/fonts/Outfit-Regular.ttf);
@@ -22,7 +33,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width:50%;
+    width:70%;
     height:7vh;
     gap: 17%;
     text-align: center;
@@ -30,7 +41,7 @@ nav{
     border-radius: 40px ;
    justify-content: center;
     font-size: 15px;
-    animation-name:navan;
+    animation-name:nav;
     animation-duration:1s;
     background: rgba(255, 255, 255, 0.4);        
     backdrop-filter: blur(12px);                 
@@ -114,6 +125,21 @@ button{
     border: none;
     
 }
+#projects{
+    width: 20%;
+    height: 100%;
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+
+    color: rgb(0, 0, 0);
+    
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
 button{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -174,20 +200,30 @@ footer{
     transition: ease-in-out;
     transition-duration: 1s;
 }
-@keyframes navan{
-    from{
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 #hr{
     animation-name: text;
     animation-duration: 3s;
+}
+.proj{
+    height:80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#ty {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+#ty:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+#apt{
+    padding-top: 10px;
 }
 
 @keyframes text{
@@ -198,6 +234,18 @@ footer{
     to{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+keyframes nav{
+    from{
+        opacity: 0;
+        scale:0
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        
     }
 }
     @keyframes appear{
@@ -371,6 +419,11 @@ footer{
         min-height: 40vh;
         background-color: white;
     }
+    .proj img{
+        width:400px;
+        border-radius: 20px;
+
+    }
     #hr h1 {
         font-size: 2rem;
         padding-top: 90px;
@@ -422,86 +475,53 @@ img, video {
     display: block;
 }
 
-@media (max-width: 900px) and (min-width: 600px) {
-    nav {
-        flex-direction: row;
-        justify-content:center;
-        gap: 40px;
-        height: 11vh;
 
-        font-size: 13px;
+    @media (max-width: 900px) and (min-width: 600px) {
+    nav {
+       display: flex;
+        flex-direction: row;
+        justify-self: space-between;
+        align-items: center;
+        
+        gap: 10px;
+        height: 7vh;
+        padding: 10px 0;
         position: fixed;
+       width: 70%;
+        font-size: 12px;
+        background-color: white;
          background: rgba(255, 255, 255, 0.4);        
     backdrop-filter: blur(12px);                 
     -webkit-backdrop-filter: blur(12px);         
     box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
-    z-index: 1000;     
-        
+    z-index: 1000;    
+    } 
+    #hero{
+        margin-left: -180px;
     }
-    #herosection {
-        padding-top: 120px;
-        min-height: 50vh;
-        background-color: #fff;
-    }
-    #hr h1 {
-        font-size: 2.2rem;
-    }
-    #hero, #wow {
-        padding: 20px 16px;
-        margin: 24px 8px 0 8px;
-        border-radius: 16px;
-    }
-    #hh {
-        font-size: 2rem;
-        transform: translate(20px, 0);
-    }
-    #para {
-        font-size: 1.1rem;
-        margin: 16px auto;
-        width: 80%;
-        transform: translate(20px, 0);
-    }
-    #dt, #dtt, #dtf, #dp {
+    #dt, #dtt, #dtf, #dp, .dt, .dtt {
         transform: none !important;
-        font-size: 1.3rem;
-        margin: 18px 0 10px 0;
-        text-align: left;
+        margin-left: 0 !important;
         padding-left: 16px;
         width: auto;
         max-width: 100%;
         box-sizing: border-box;
         overflow-wrap: break-word;
     }
-    #dtf{
-        font-size: 1rem;
-    }
-    .dt, .dtt {
-        transform: none !important;
-        margin-left: 0;
-        padding-left: 24px;
-    }
-    #projects {
-        width: 20%;
-        font-size: 1rem;
-        padding: 12px 0;
-        margin: 20px auto;
-        display: block;
-    }
-    footer {
-        font-size: 1rem;
-        border-radius: 0;
-        margin-top: 24px;
-        padding: 18px 8px;
-        margin-bottom: -20px;
+    .proj img {
+        width: 90%;
+        border-radius: 40px;
     }
 }
+
 
 
 @media (max-width: 1024px) and (min-width: 769px) {
     nav {
         flex-direction: row;
         justify-content: cente;
-        gap:80px;
+        gap:30px;
+        width: 60%;
         height: 6vh;
         padding: 18px 0;
         font-size: 13px;
@@ -513,6 +533,7 @@ img, video {
     z-index: 1000;     
         
     }
+
     #herosection {
         padding-top: 120px;
         min-height: 50vh;
@@ -526,10 +547,18 @@ img, video {
         margin: 24px 8px 0 8px;
         border-radius: 16px;
     }
+    
     #hh {
         font-size: 2rem;
         transform: translate(20px, 0);
     }
+    #ty {
+    width: 600px;   /* or any size you want */
+    height: auto;   /* keeps aspect ratio */
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+}
     #para {
         font-size: 1.1rem;
         margin: 16px auto;
@@ -599,6 +628,13 @@ img, video {
         margin: 24px 8px 0 8px;
         border-radius: 16px;
     }
+    #ty {
+    width: 600px;   /* or any size you want */
+    height: auto;   /* keeps aspect ratio */
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+}
     #hh {
         font-size: 2rem;
         transform: translate(20px, 0);
@@ -663,7 +699,8 @@ body{
 
 nav{
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5%;
     align-items: center;
     flex-direction: row;
     width:50%;
@@ -673,8 +710,8 @@ nav{
     border-radius: 40px ;
    justify-content: center;
     font-size: 15px;
-    animation-name:navan;
-    animation-duration:1s;
+    animation-name:nav;
+    animation-duration:2s;
     background: rgba(255, 255, 255, 0.4);        
     backdrop-filter: blur(12px);                 
     -webkit-backdrop-filter: blur(12px);         
@@ -682,6 +719,18 @@ nav{
     z-index: 1000;   
     top:0;                            
              
+}
+.proj{
+    height:80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.proj img{
+    width: 40%;
+    border-radius: 40px;
 }
 #hr{
 font-size: 20px;
@@ -816,14 +865,15 @@ footer{
     transition: ease-in-out;
     transition-duration: 1s;
 }
-@keyframes navan{
+@keyframes nav{
     from{
         opacity: 0;
-        transform: translateY(-100px);
+        scale:0
     }
     to{
         opacity: 1;
-        transform: translateY(0);
+        scale: 1;
+        
     }
 }
 
