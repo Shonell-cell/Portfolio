@@ -217,6 +217,9 @@ footer{
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+      animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 #ty:hover {
     transform: scale(1.05);
