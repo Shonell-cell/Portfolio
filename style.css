@@ -394,7 +394,7 @@ keyframes nav{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (min-width: 300px) {
     body{
         background-color: rgb(255, 255, 255);
     }
@@ -422,13 +422,19 @@ keyframes nav{
         min-height: 40vh;
         background-color: white;
     }
+    #herosection p{
+        font-size: 1.2rem;
+        margin: 0 auto;
+       
+        text-align: center;
+    }
     .proj img{
         width:400px;
         border-radius: 20px;
 
     }
     #hr h1 {
-        font-size: 2rem;
+        font-size: 2.4rem;
         padding-top: 90px;
     }
     #hero, #wow {
