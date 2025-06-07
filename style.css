@@ -170,12 +170,16 @@ color:rgb(255, 38, 0) ;
     width:90%;
 
 }
+button{
+border: 0cap;
+}
+
 p{
-width: 300px;
+width: 250px;
 
 }
 #paragraph{
-    width: 300px;
+    width: 250px;
 }
 #cp{
     margin-left: 120px;
@@ -195,6 +199,11 @@ width: 300px;
     width:90%;
 
 }
+button{
+border: 0cap;
+}
+
+
 p{
 width: 300px;
 
