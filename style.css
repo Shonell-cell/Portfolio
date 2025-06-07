@@ -1,897 +1,120 @@
-
-html{
-    scroll-behavior: smooth;
-    font-size: 16px;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
 body{
-    background-color:rgb(255, 255, 255);
-    color:rgb(19, 19, 19);
-    font-family:outfit;
-    cursor:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="12" fill="black" /></svg>') 16 16, auto;
-   overflow-x: hidden;
-   
+    background-color: rgb(255, 255, 255);
+    font-family: outfit;
 }
-
 @font-face{
     font-family: outfit;
     src: url(fonts/fonts/Outfit-Regular.ttf);
 }
 
- #navigation{
-    display:flex;
-    justify-content: center;
- }
- 
-
-nav{
-    margin-top: 7px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width:70%;
-    height:7vh;
-    gap: 17%;
-    text-align: center;
-    position:fixed;
-    border-radius: 40px ;
-   justify-content: center;
-    font-size: 15px;
-    animation-name:nav;
-    animation-duration:1s;
-    background: rgba(255, 255, 255, 0.4);        
-    backdrop-filter: blur(12px);                 
-    -webkit-backdrop-filter: blur(12px);         
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
-    z-index: 1000;   
-    top:0;                            
-             
-}
-
-#hr{
-font-size: 20px;
-display:inline-block
-}
-#hr:hover{
-    color: rgb(145, 230, 35);
-  
-    cursor: pointer;
-    transition: ease-in-out;
-    transition-duration: 1s;
-}
-a{
-    color:rgb(0, 0, 0);
-    text-decoration: none;
-    
-    
-}
-a:hover{
-    color: rgb(145, 230, 35);
-    transition: ease-in-out;
-    transition-duration: 1s;
-}
-#txt{
-padding-left: 5%;
-padding-right: 5%;
-
-}
-
-
-
-#hh{
-    
-    padding-top: 20px;
-    font-family: outfit;
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-    transform: translate(200PX , 59PX);
-     animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-#para{
-    width:40;
-    font-size: 15px;
-    float: LEFT;
-    width: 600px;
-    margin-LEFT: 180px;
-    margin-top: 70px;
-     animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-
-}
-#ip{
-    font-family: outfit;
-    text-align: center;
-    margin-top: 100px;
-    font-size: 20px;
-}
-#hero{
-    height:500px;
-}
-button{
-    background-color: rgb(255, 255, 255);
-    width:100px;
-    margin-left:565px;
-    width:200px;
-    height:40px;
-    font-family: outfit;
-    margin-bottom: 10%;
-    border: none;
-    
-}
-#projects{
-    width: 20%;
-    height: 100%;
-    font-size: 30px;
-    padding: 20px;
-    margin: 20px auto;
-    display: block;
-    text-align: center;
-
-    color: rgb(0, 0, 0);
-    
-     animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-button{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-border-radius: 20px;;
-    
-    transition: ease-in-out 1s;
-    cursor: pointer;
-     animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-button:hover{
-    color: rgb(255, 255, 255);
-    background-color:rgb(47, 204, 15);
-    cursor: pointer;
-    transition: ease-in-out 1s;
-    
-    
-}
-#herosection{
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height:500px;
-   margin-top: -173px;
-   border-radius: 4px;
-   text-align: center;
-    padding-top: 300px;
-    font-family: outfit;
-    
-}
-
-footer{
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 120px;
-    
-    bottom: 0;
-    text-align: center;
-    padding-top: 30px;
-    font-family: outfit;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-   
-}
-#linkdin{
-    color:rgb(255, 255, 255);
-    display: inline-block;
-    background-color:black;
-    padding: 10px;
-    margin-right: 10px;
-    
-}
-#linkdin:hover{
-    background-color:rgb(114, 202, 25);
-    color: black;
-    cursor: pointer;
-    transition: ease-in-out;
-    transition-duration: 1s;
-}
-#hr{
-    animation-name: text;
-    animation-duration: 3s;
-}
-.proj{
-    height:80vh;
-    width: 100%;
+.herosection{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#ty {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-#ty:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-}
-#apt{
-    padding-top: 10px;
-}
+justify-content: center;
 
-@keyframes text{
-    from{
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-keyframes nav{
-    from{
-        opacity: 0;
-        scale:0
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-        
-    }
-}
-    @keyframes appear{
-    from{
-        opacity: 0;
-        scale:0.5;
-    }
-    to{
-        opacity: 1;
-        scale:1;
-    }
-}
-
-
-#wow{
-    height: 300px;
+    height:10vh;
     width:100%;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 80px 0px;
-    border-radius: 20px;
-}
-#wow a{
-    color: black;
+   
+    top:0;
+    color: rgb(255, 38, 0);
+    font-size: 10px;
+  animation-name: name;
+  animation-duration: 2s;
+
 }
 
-#wow{
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-#wow a:hover{
-    color:rgb(118, 218, 18);
-    transition: ease-in-out;
-    transition-duration: 1s;
-}
-.dt{
-    list-style: none;
-    transform: translateX(700px);
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-#dt{
-    transform: translateX(800px);
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-#dp{
-    transform: translateX(800px);
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-
-.dtt{
-    list-style: none;
-    transform: translateX(200px);
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-    #dtf{
-    transform: translateX(170px);
-     animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-    }
-#dtt{
-    transform: translateX(200px);
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-
-/* Responsive styles for tablets and below */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        gap: 16px;
-        height: auto;
-        padding: 10px 0;
-        font-size: 1rem;
-    }
-    #herosection {
-        padding-top: 80px;
-        background-color: white;
-    }
-    #hero, #wow {
-        padding: 24px 10px;
-    }
-    #hh {
-        font-size: 1.5rem;
-    }
-    #para {
-        font-size: 1rem;
-    }
-}
-
-
-
-
-/* Responsive styles for tablets and below */
-@media (max-width: 600px) {
-    /* ...existing styles... */
-    #dt, #dtt, #dtf {
-        transform: none;
-        font-size: 1.1rem;
-        margin: 20px 0 10px 0;
-        text-align: left;
-        padding-left: 10px;
-    }
-    .dt, .dtt {
-        transform: none;
-        margin-left: 0;
-        padding-left: 20px;
-    }
-}
-
-
-@media (max-width: 600px) {
-    #dt, #dtt, #dtf, #dp {
-        transform: none !important;
-        font-size: 25px;
-        margin: 16px 0 8px 0;
-        text-align: left;
-        padding-left: 8px;
-        width: auto;
-        max-width: 100%;
-        box-sizing: border-box;
-        overflow-wrap: break-word;
-    }
-    #dtf{
-       font-size: 1rem;
-    }
-    .dt, .dtt {
-        transform: none !important;
-        margin-left: 0;
-        padding-left: 16px;
-    }
-}
-
-
-@media (max-width: 600px) and (min-width: 300px) {
-    body{
-        background-color: rgb(255, 255, 255);
-    }
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-self: space-between;
-        align-items: center;
-        
-        gap: 10px;
-        height: 7vh;
-        padding: 10px 0;
-        position: fixed;
-       width: 70%;
-        font-size: 12px;
-        background-color: white;
-         background: rgba(255, 255, 255, 0.4);        
-    backdrop-filter: blur(12px);                 
-    -webkit-backdrop-filter: blur(12px);         
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
-    z-index: 1000;     
-    }
-    #herosection {
-        padding-top: 140px;
-        min-height: 40vh;
-        background-color: white;
-    }
-    #herosection p{
-        font-size: 1.2rem;
-        margin: 0 auto;
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  
+    height: 10vh;
+    width: 100%;
+   
        
-        text-align: center;
-    }
-    .proj img{
-        width:400px;
-        border-radius: 20px;
-
-    }
-    #hr h1 {
-        font-size: 2.4rem;
-        padding-top: 90px;
-    }
-    #hero, #wow {
-        padding: 12px 4px;
-        margin: 20px 4px 0 4px;
-        border-radius: 12px;
-    }
-    #hh {
-        font-size: 25px;
-        transform: translate(30px, 0);
-    }
-    #para {
-        font-size: 15px;
-        margin: 10px auto;
-       width:300px;
-       transform: translate(30px, 0);
-
-    }
-    #projects {
-        width: 40%;
-        font-size: 1rem;
-        padding: 12px 0;
-        margin: 20px auto;
-        display: block;
-    }
-    
-        
-     
-    
-    footer {
-        font-size: 0.95rem;
-        border-radius: 0;
-        margin-top: 20px;
-        padding: 16px 4px;
-        margin-bottom: -30px;
-    }
+padding-bottom: 50px;
 }
-
-ul{
-    list-style: none;
+.spacer{
+    height: 5vh;
+    width: 100%;
 }
+.nav a{
+color:rgb(255, 255, 255);
+text-decoration: none;
 
-
-img, video {
-    max-width: 100%;
-    height: auto;
-    display: block;
+ 
 }
-
-
-    @media (max-width: 900px) and (min-width: 600px) {
-    nav {
-       display: flex;
-        flex-direction: row;
-        justify-self: space-between;
-        align-items: center;
-        
-        gap: 10px;
-        height: 7vh;
-        padding: 10px 0;
-        position: fixed;
-       width: 70%;
-        font-size: 12px;
-        background-color: white;
-         background: rgba(255, 255, 255, 0.4);        
-    backdrop-filter: blur(12px);                 
-    -webkit-backdrop-filter: blur(12px);         
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
-    z-index: 1000;    
-    } 
-    #hero{
-        margin-left: -180px;
-    }
-    #dt, #dtt, #dtf, #dp, .dt, .dtt {
-        transform: none !important;
-        margin-left: 0 !important;
-        padding-left: 16px;
-        width: auto;
-        max-width: 100%;
-        box-sizing: border-box;
-        overflow-wrap: break-word;
-    }
-    .proj img {
-        width: 90%;
-        border-radius: 40px;
-    }
-}
-
-
-
-@media (max-width: 1024px) and (min-width: 769px) {
-    nav {
-        flex-direction: row;
-        justify-content: cente;
-        gap:30px;
-        width: 60%;
-        height: 6vh;
-        padding: 18px 0;
-        font-size: 13px;
-        position: fixed;
-         background: rgba(255, 255, 255, 0.4);        
-    backdrop-filter: blur(12px);                 
-    -webkit-backdrop-filter: blur(12px);         
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
-    z-index: 1000;     
-        
-    }
-
-    #herosection {
-        padding-top: 120px;
-        min-height: 50vh;
-        background-color: #fff;
-    }
-    #hr h1 {
-        font-size: 2.2rem;
-    }
-    #hero, #wow {
-        padding: 20px 16px;
-        margin: 24px 8px 0 8px;
-        border-radius: 16px;
-    }
-    
-    #hh {
-        font-size: 2rem;
-        transform: translate(20px, 0);
-    }
-    #ty {
-    width: 600px;   /* or any size you want */
-    height: auto;   /* keeps aspect ratio */
-    display: block;
-    margin: 0 auto;
-    border-radius: 40px;
-}
-    #para {
-        font-size: 1.1rem;
-        margin: 16px auto;
-        width: 80%;
-        transform: translate(20px, 0);
-    }
-    #dt, #dtt, #dtf, #dp {
-        transform: none !important;
-        font-size: 1.3rem;
-        margin: 18px 0 10px 0;
-        text-align: left;
-        padding-left: 16px;
-        width: auto;
-        max-width: 100%;
-        box-sizing: border-box;
-        overflow-wrap: break-word;
-    }
-     #dtf{
-         font-size: 1rem;
-     }
-    .dt, .dtt {
-        transform: none !important;
-        margin-left: 0;
-        padding-left: 24px;
-    }
-    #projects {
-        width: 20%;
-        font-size: 1rem;
-        padding: 12px 0;
-        margin: 20px auto;
-        display: block;
-    }
-    footer {
-        font-size: 1rem;
-        border-radius: 0;
-        margin-top: 24px;
-        padding: 18px 8px;
-        margin-bottom: -20px;
-    }
-}
-
-@media (max-width: 1200px) and (min-width: 1024px) {
-    nav {
-        flex-direction: row;
-        justify-content: center;
-        gap: 90px;
-        height: 13vh;
-        font-size: 13px;
-        position: fixed;
-         background: rgba(255, 255, 255, 0.4);        
-    backdrop-filter: blur(12px);                 
-    -webkit-backdrop-filter: blur(12px);         
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
-    z-index: 1000;     
-        
-    }
-    #herosection {
-        padding-top: 120px;
-        min-height: 50vh;
-        background-color: #fff;
-    }
-    #hr h1 {
-        font-size: 2.2rem;
-    }
-    #hero, #wow {
-        padding: 20px 16px;
-        margin: 24px 8px 0 8px;
-        border-radius: 16px;
-    }
-    #ty {
-    width: 600px;   /* or any size you want */
-    height: auto;   /* keeps aspect ratio */
-    display: block;
-    margin: 0 auto;
-    border-radius: 40px;
-}
-    #hh {
-        font-size: 2rem;
-        transform: translate(20px, 0);
-    }
-    #para {
-        font-size: 1.1rem;
-        margin: 16px auto;
-        width: 80%;
-        transform: translate(20px, 0);
-    }
-    #dt, #dtt, #dtf, #dp {
-        transform: none !important;
-        font-size: 1.3rem;
-        margin: 18px 0 10px 0;
-        text-align: left;
-        padding-left: 16px;
-        width: auto;
-        max-width: 100%;
-        box-sizing: border-box;
-        overflow-wrap: break-word;
-    }
-    .dt, .dtt {
-        transform: none !important;
-        margin-left: 0;
-        padding-left: 24px;
-    }
-    #projects {
-        width: 20%;
-        font-size: 1rem;
-        padding: 12px 0;
-        margin: 20px auto;
-        display: block;
-    }
-    footer {
-        font-size: 1rem;
-        border-radius: 0;
-        margin-top: 24px;
-        padding: 18px 8px;
-        margin-bottom: -20px;
-    }
-}
-
-
-@media (max-width:1920px) and (min-width: 1200px) {
-body{
-    background-color:rgb(255, 255, 255);
-    color:rgb(19, 19, 19);
-    font-family:outfit;
-    cursor:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="12" fill="black" /></svg>') 16 16, auto;
+.nav a:hover{
+color: rgb(255, 38, 0);
+   
    
 }
-@font-face{
-    font-family: outfit;
-    src: url(fonts/fonts/Outfit-Regular.ttf);
-}
-
- #navigation{
-    display:flex;
-    justify-content: center;
- }
- 
-
-nav{
-    display:flex;
-    justify-content: center;
-    gap: 5%;
-    align-items: center;
-    flex-direction: row;
-    width:50%;
-    height:13vh;
-    text-align: center;
-    position:fixed;
-    border-radius: 40px ;
-   justify-content: center;
-    font-size: 15px;
-    animation-name:nav;
-    animation-duration:2s;
-    background: rgba(255, 255, 255, 0.4);        
-    backdrop-filter: blur(12px);                 
-    -webkit-backdrop-filter: blur(12px);         
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
-    z-index: 1000;   
-    top:0;                            
-             
-}
-.proj{
-    height:80vh;
+.con{
     width: 100%;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
-.proj img{
-    width: 40%;
+.content{
+    
+   display: flex;
+   flex-direction: column;
+   
+   align-items: center;
+    width: 70%;
+    height: 80vh;
+    background-color:rgb(255, 255, 255) ;
     border-radius: 40px;
+ box-shadow: 0 2px 16px rgba(0, 0, 0, 0.356);
+overflow:scroll;
+overflow-x: hidden;
+z-index: 2;
 }
-#hr{
-font-size: 20px;
-display:inline-block
-}
-#hr:hover{
-    color: rgb(145, 230, 35);
-  
-    cursor: pointer;
-    transition: ease-in-out;
-    transition-duration: 1s;
-}
-a{
-    color:rgb(0, 0, 0);
-    text-decoration: none;
-    
+.content:hover{
+    scale: 1.1;
+    transition: 0.2s;
     
 }
-a:hover{
-    color: rgb(145, 230, 35);
-    transition: ease-in-out;
-    transition-duration: 1s;
-}
-#txt{
-padding-left: 5%;
-padding-right: 5%;
-
-}
 
 
 
-#hh{
+#paragraph{
+    width: 500px;
     
-    padding-top: 20px;
+
+}
+
+
+button{
+   
+    border: 0cap;
     font-family: outfit;
-    font-size: 40px;
     color: rgb(0, 0, 0);
-    transform: translate(200PX , 59PX);
-     animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-#para{
-    width:40;
-    font-size: 15px;
-    float: LEFT;
-    width: 600px;
-    margin-LEFT: 180px;
-    margin-top: 70px;
-     animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-
-}
-#ip{
-    font-family: outfit;
-    text-align: center;
-    margin-top: 100px;
-    font-size: 20px;
-}
-#hero{
-    height:500px;
-}
-button{
-    background-color: rgb(255, 255, 255);
-    width:100px;
-    margin-left:565px;
-    width:200px;
-    height:40px;
-    font-family: outfit;
-    margin-bottom: 10%;
-    border: none;
-    
-}
-button{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-border-radius: 20px;;
-    
-    transition: ease-in-out 1s;
     cursor: pointer;
-     animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-name: buttons;
+    animation-duration: 3s;
+    background: rgba(255, 255, 255, 0);        
+    backdrop-filter: blur(0px);                 
+    -webkit-backdrop-filter: blur(0px);         
+       
+    z-index: 1;   
+    top:0;         
 }
 button:hover{
-    color: rgb(255, 255, 255);
-    background-color:rgb(47, 204, 15);
-    cursor: pointer;
-    transition: ease-in-out 1s;
-    
-    
+color:rgb(255, 38, 0) ;
 }
-#herosection{
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height:500px;
-   margin-top: -173px;
-   border-radius: 4px;
-   text-align: center;
-    padding-top: 300px;
-    font-family: outfit;
-    
-}
-
-footer{
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 120px;
-    
-    bottom: 0;
-    text-align: center;
-    padding-top: 30px;
-    font-family: outfit;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-   
-}
-#linkdin{
-    color:rgb(255, 255, 255);
-    display: inline-block;
-    background-color:black;
-    padding: 10px;
-    margin-right: 10px;
-    
-}
-#linkdin:hover{
-    background-color:rgb(114, 202, 25);
-    color: black;
-    cursor: pointer;
-    transition: ease-in-out;
-    transition-duration: 1s;
-}
-@keyframes nav{
+@keyframes buttons{
     from{
         opacity: 0;
-        scale:0
+        transform: translateY(100px);
     }
     to{
         opacity: 1;
-        scale: 1;
-        
+        transform: translateY(0);
     }
 }
-
-#hr{
-    animation-name: text;
-    animation-duration: 3s;
-}
-
-@keyframes text{
+@keyframes name{
     from{
         opacity: 0;
         transform: translateY(-100px);
@@ -901,82 +124,101 @@ footer{
         transform: translateY(0);
     }
 }
-    @keyframes appear{
+#herotext{
+   justify-self:center;
+   align-self:center ;
+   margin-top: -300px;
+   margin-bottom: 300px;
+   font-size: 40px;
+   animation-name: herotext;
+   animation-duration: 5s;
+
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.fade-in.show {
+    opacity: 1;
+}
+
+#contact{
+    margin-top:-300px ;
+    
+}
+
+@keyframes herotext{
     from{
         opacity: 0;
-        scale:0.5;
+        
     }
     to{
         opacity: 1;
-        scale:1;
+      
     }
 }
 
-
-#wow{
-    height: 300px;
-    width:100%;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 80px 0px;
-    border-radius: 20px;
-}
-#wow a{
-    color: black;
+#hhp{
+    margin-top: -280px;
+    margin-bottom: 220px;
+    animation-name: herotext;
+   animation-duration: 10s;
 }
 
-#wow{
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+@media (max-width: 479px){
+.content{
+    width:90%;
+
 }
-#wow a:hover{
-    color:rgb(118, 218, 18);
-    transition: ease-in-out;
-    transition-duration: 1s;
+p{
+width: 300px;
+
 }
-.dt{
-    list-style: none;
-    transform: translateX(700px);
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+#paragraph{
+    width: 300px;
 }
-#dt{
-    transform: translateX(800px);
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+#cp{
+    margin-left: 120px;
+  
 }
-#dp{
-    transform: translateX(800px);
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+#hhp{
+    margin-left:120px ;
 }
 
-.dtt{
-    list-style: none;
-    transform: translateX(200px);
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+
 }
-    #dtf{
-    transform: translateX(170px);
-     animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-    }
-#dtt{
-    transform: translateX(200px);
-      animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+
+
+
+@media (max-width: 768px) and (min-width: 480px) {
+.content{
+    width:90%;
+
 }
+p{
+width: 300px;
+
 }
-body.dark-mode {
-    background-color: #111 !important;
-    color: #fff !important;
+#paragraph{
+    width: 300px;
+}
+#cp{
+    margin-left: 120px;
+  
+}
+#hhp{
+    margin-left:120px ;
+}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+.content{
+    width:90%;
+}
+
+
+
+
 }
