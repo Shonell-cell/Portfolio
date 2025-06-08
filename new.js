@@ -186,8 +186,8 @@ herotext.textContent=null
 video.autoplay = true;
 video.loop = true;
 video.muted = true; 
-  
-video.preload = "auto";
+
+video.preload = "metadata"; 
 
     link.appendChild(video);
 
