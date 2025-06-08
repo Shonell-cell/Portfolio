@@ -63,7 +63,7 @@ if (oldLink) oldLink.remove();
 ht="Shonell Shanu"
 herotext.textContent=ht
 
-hp="A Front-End Developer"
+hp="A Front-End Developer."
 hhp.textContent=hp
 
 
@@ -173,18 +173,23 @@ herotext.textContent=null
     link.id = "dynamic-img-link";
 
     
-    const img = document.createElement('img');
-    img.id = 'dynamic-img';
-    img.src = "img/Screenshot 2025-06-04 004207.png";
-    img.alt = 'Dynamic Image';
-    img.style.display = 'block';
-    img.style.margin = '30px auto';
-    img.style.maxWidth = '400px';
+    const video = document.createElement('video');
+    video.id = 'dynamic-img';
+    video.src = "img/airpods.mp4" ;
+    video.alt = 'Dynamic Image';
+    video.style.display = 'block';
+    video.style.margin = '30px auto';
+    video.style.maxWidth = '400px';
+    video.style.borderRadius = '40px';
 
-    img.style.borderRadius = '40px';
 
-    // Put the image inside the link
-    link.appendChild(img);
+video.autoplay = true;
+video.loop = true;
+video.muted = true; 
+  
+video.preload = "auto";
+
+    link.appendChild(video);
 
     // Add to #content
     document.getElementById('content').appendChild(link);
