@@ -242,7 +242,10 @@ width: 250px;
 #hhp{
     margin-left:120px ;
 }
-
+#dynamic-img{
+    width: 300px;
+     border-radius: 5px;
+}
 
 }
 
@@ -254,8 +257,10 @@ width: 250px;
 
 }
 
-
-
+#dynamic-img{
+    width: 300px;
+    border-radius: 5px;
+}
 
 
 
