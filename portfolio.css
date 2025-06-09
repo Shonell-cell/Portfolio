@@ -219,8 +219,27 @@ animation: typingh 3s steps(30, end) forwards 3s, blink 0.75s step-end infinite 
 
 }
 
-@media (max-width: 479px){
-.content{
+@media (max-width: 350px){
+
+.nav{
+
+
+ flex-wrap: wrap;
+        gap: 5px;
+        width: 100%;
+        font-size: 1rem;
+        justify-content: center;
+}
+
+
+    .con{
+overflow-x: hidden;
+    
+}
+
+
+
+    .content{
     width:90%;
 
 }
@@ -241,15 +260,99 @@ width: 250px;
     margin-left: 120px;
   
 }
-#hhp{
-    margin-left:120px ;
+
+#herotext{
+
+font-size: 35px;
+
+}
+
+
+#dynamic-img{
+    width: 300px;
+     border-radius: 5px;
+}
+
+@keyframes typing {
+  from { width: 0; border-right-color: #333;}
+  to { width: 220px; border-right-color: transparent;}
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes typingh {
+  from { width: 0; }
+  to { width: 167px; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 479px){
+.nav{
+
+ flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        font-size: 1rem;
+        justify-content: center;
+}
+
+
+    .con{
+overflow-x: hidden;
+    
+}
+
+
+
+    .content{
+    width:90%;
+
+}
+button{
+border: 0cap;
+}
+
+
+
+p{
+width: 250px;
+
+}
+#paragraph{
+    width: 250px;
+}
+#cp{
+    margin-left: 120px;
+  
+}
+
+    
 }
 #dynamic-img{
     width: 300px;
      border-radius: 5px;
 }
 
-}
+
 
 
 
@@ -260,10 +363,16 @@ width: 250px;
 }
 
 .nav{
-gap:40px
+gap: 40px;
 
 
 }
+.con{
+overflow-x: hidden;
+    
+}
+
+
 
 #dynamic-img{
     width: 300px;
@@ -288,9 +397,9 @@ width: 300px;
     margin-left: 120px;
   
 }
-#hhp{
-    margin-left:120px ;
-}
+
+   
+
 
 
 }
