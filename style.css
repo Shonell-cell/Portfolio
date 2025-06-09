@@ -1,6 +1,7 @@
 body{
     font-family: outfit;
-    cursor:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="12" fill="black" /></svg>') 16 16, auto;
+    cursor:  url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='12' fill='white' /></svg>") 16 16, auto;
+
 background-color:rgb(255, 255, 255)
     
 }
