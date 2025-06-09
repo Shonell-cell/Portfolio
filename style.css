@@ -1,5 +1,5 @@
 body{
-    font-family: outfit;
+    font-family: outfit system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     cursor:  url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='12' fill='white' /></svg>") 16 16, auto;
 
 background-color:rgb(255, 255, 255)
@@ -74,6 +74,8 @@ border-radius: 40px;
 #hh{
     background-color: rgba(255, 255, 255, 0.226);
     color: rgb(255, 255, 255);
+   backdrop-filter: blur(12px);                 
+    -webkit-backdrop-filter: blur(12px);     
    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.356);
    
 }
