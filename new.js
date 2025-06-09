@@ -54,17 +54,16 @@ mj.textContent=null
 }
 
 l1.onclick=function(){
+
+
+
+
 let oldImg = document.getElementById('dynamic-img');
 if (oldImg) oldImg.remove();
 
 let oldLink = document.getElementById('dynamic-img-link');
 if (oldLink) oldLink.remove();
 
-ht="Shonell Shanu"
-herotext.textContent=ht
-
-hp="A Front-End Developer."
-hhp.textContent=hp
 
 
 
