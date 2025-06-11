@@ -193,11 +193,22 @@ video.preload = "metadata";
     // Add to #content
     document.getElementById('content').appendChild(link);
 }
-const toggle = document.getElementById("themeToggle");
+const themeToggle = document.getElementById("themeToggle");
 const root = document.documentElement;
 
-themeToggle.addEventListener("click", () => {
-  const currentTheme = root.getAttribute("data-theme");
-  const newTheme = currentTheme === "light" ? "dark" : "light";
-  root.setAttribute("data-theme", newTheme);
-});
+// On page load, set theme from localStorage (if exists)
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  root.setAttribute('data-theme', savedTheme);
+}
+
+// Toggle theme and save preference
+themeToggle.onclick = function() {
+  const currentTheme = root.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+};
+
+
+
