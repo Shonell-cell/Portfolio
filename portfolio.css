@@ -1,7 +1,51 @@
 body{
     background-color: rgb(255, 255, 255);
     font-family: outfit;
+
+background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #000000; 
+--n-color:rgba(255, 255, 255, 0.603);
+--th-color:rgba(255, 255, 255, 0.26);        
 }
+
+
+}
+
+
+
+[data-theme="dark"] {
+  --bg-color: #1d1d1f;
+  --text-color: #f5f5f7;
+  --accent-color: #ffffff;
+  --n-color:rgba(0, 0, 0, 0.603);
+  --th-color:rgba(0, 0, 0, 0.26);
+}
+#themeToggle{
+    animation-name: none;
+  color: var(--text-color);
+  transform: translateY(-10px);
+  background-color: #ff0000;
+  padding: 12px 12px;
+  border-radius: 20px;
+  
+}
+
+
+
+#themeToggle:active{
+    scale: 1.1;
+}
+
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -85,12 +129,19 @@ align-items: center;
     flex-direction: row;
     gap: 100px;
     justify-content: center;
-
+align-self: center;
+justify-self: center;
     height: 10vh;
-    width: 100%;
+    width: 50%;
     align-items: center;
-   
-       
+    background: var( --th-color)  ;  
+    backdrop-filter: blur(12px);                 
+    -webkit-backdrop-filter: blur(12px);         
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);     
+       border-radius: 20px;
+
+animation-name: buttons;
+    animation-duration: 3s ;
 
 }
 .spacer{
@@ -114,16 +165,29 @@ color: rgb(255, 38, 0);
     display: flex;
     justify-content: center;
     align-items: center;
+   
+
+
+    
 }
 .content{
+
+background-color: var(--n-color);
+  color: var(--text-color);
+
+  transition: background-color 0.3s, color 0.3s;
+
+
+    
+   
     margin-top: 50px;
    display: flex;
    flex-direction: column;
-   
+  
    align-items: center;
-    width: 70%;
+    width: 90%;
     height: 80vh;
-    background-color:rgb(255, 255, 255) ;
+   
     border-radius: 40px;
  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.356);
 overflow:scroll;
@@ -146,18 +210,18 @@ z-index: 2;
 
 
 button{
-   
+  
+
+color:#FF0000 ;
+
     border: 0cap;
     font-family: outfit;
-    color: rgb(0, 0, 0);
+ 
     cursor: pointer;
-    animation-name: buttons;
-    animation-duration: 3s;
-    background: rgba(255, 255, 255, 0);        
-    backdrop-filter: blur(0px);                 
-    -webkit-backdrop-filter: blur(0px);         
-       
-    z-index: 1;   
+    
+    background: transparent;        
+    
+
     top:0;         
 }
 button:hover{
@@ -167,11 +231,13 @@ button:hover{
 @keyframes buttons{
     from{
         opacity: 0;
-        transform: translateY(100px);
+       scale: 0%;
+       
     }
     to{
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 100% ;
+        scale: 1;
+       
     }
 }
 @keyframes name{
@@ -184,6 +250,10 @@ button:hover{
         transform: translateY(0);
     }
 }
+
+
+
+
 #herotext{
    justify-self:center;
    align-self:center ;
@@ -232,10 +302,7 @@ animation: typingh 3s steps(30, end) forwards 3s, blink 0.75s step-end infinite 
 }
 
 
-    .con{
-overflow-x: hidden;
     
-}
 
 
 
@@ -275,7 +342,7 @@ font-size: 35px;
 
 @keyframes typing {
   from { width: 0; border-right-color: #333;}
-  to { width: 220px; border-right-color: transparent;}
+  to { width: 225px; border-right-color: transparent;}
 }
 
 @keyframes blink {
@@ -306,7 +373,12 @@ font-size: 35px;
 
 
 @media (max-width: 479px){
-.nav{
+
+
+
+
+
+    .nav{
 
  flex-wrap: wrap;
         gap: 10px;
@@ -316,16 +388,13 @@ font-size: 35px;
 }
 
 
-    .con{
-overflow-x: hidden;
-    
-}
+
 
 
 
     .content{
-    width:90%;
-
+    width:100%;
+    
 }
 button{
 border: 0cap;
@@ -363,14 +432,12 @@ width: 250px;
 }
 
 .nav{
-gap: 40px;
+ gap: 10%;
+width: 100%;
 
 
 }
-.con{
-overflow-x: hidden;
-    
-}
+
 
 
 
@@ -406,8 +473,15 @@ width: 300px;
 
 @media (min-width: 768px) and (max-width: 1023px){
 .content{
-    width:90%;
+    width:100%;
 }
+
+.nav{
+
+    width: 80%;
+}
+
+
 }
 
 
