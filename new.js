@@ -193,3 +193,11 @@ video.preload = "metadata";
     // Add to #content
     document.getElementById('content').appendChild(link);
 }
+const toggle = document.getElementById("themeToggle");
+const root = document.documentElement;
+
+themeToggle.addEventListener("click", () => {
+  const currentTheme = root.getAttribute("data-theme");
+  const newTheme = currentTheme === "light" ? "dark" : "light";
+  root.setAttribute("data-theme", newTheme);
+});
