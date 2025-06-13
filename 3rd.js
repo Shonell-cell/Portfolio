@@ -15,14 +15,16 @@ if (savedTheme) {
 } else {
   // Only use time-based logic if no saved theme
   const now = new Date();
-  if (now.getHours() >= 18) {
-    root.setAttribute('data-theme', 'dark');
-    document.body.classList.add('dark');
-    toggleSwitch.checked = true;
-  } else {
+  if (now.getHours() >= 6 && now.getHours() < 18) {
+    // Between 6am and 6pm: light mode
     root.setAttribute('data-theme', 'light');
     document.body.classList.remove('dark');
     toggleSwitch.checked = false;
+  } else {
+    // Between 6pm and 6am: dark mode
+    root.setAttribute('data-theme', 'dark');
+    document.body.classList.add('dark');
+    toggleSwitch.checked = true;
   }
 }
 
@@ -39,7 +41,6 @@ toggleSwitch.addEventListener('change', () => {
 });
 
 // ...your scroll percent code...
-
 const content = document.getElementById('CONTENT');
 const scrollPercent = document.getElementById('scroll-percent');
 
