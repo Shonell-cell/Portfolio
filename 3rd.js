@@ -1,0 +1,65 @@
+const toggleSwitch = document.getElementById('darkModeSwitch');
+const root = document.documentElement;
+
+// On page load, set theme from localStorage (if exists)
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  root.setAttribute('data-theme', savedTheme);
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark');
+    toggleSwitch.checked = true;
+  } else {
+    document.body.classList.remove('dark');
+    toggleSwitch.checked = false;
+  }
+} else {
+  // Only use time-based logic if no saved theme
+  const now = new Date();
+  if (now.getHours() >= 18) {
+    root.setAttribute('data-theme', 'dark');
+    document.body.classList.add('dark');
+    toggleSwitch.checked = true;
+  } else {
+    root.setAttribute('data-theme', 'light');
+    document.body.classList.remove('dark');
+    toggleSwitch.checked = false;
+  }
+}
+
+// Toggle theme and save preference
+toggleSwitch.addEventListener('change', () => {
+  const newTheme = toggleSwitch.checked ? 'dark' : 'light';
+  root.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  if (newTheme === 'dark') {
+    document.body.classList.add('dark');
+  } else {
+    document.body.classList.remove('dark');
+  }
+});
+
+// ...your scroll percent code...
+
+const content = document.getElementById('CONTENT');
+const scrollPercent = document.getElementById('scroll-percent');
+
+// Show and update scroll percent on scroll
+content.addEventListener('scroll', function(e) {
+    const percent = Math.round(
+        (content.scrollTop / (content.scrollHeight - content.clientHeight)) * 100
+    );
+    scrollPercent.textContent = percent + '%';
+    scrollPercent.style.display = 'block';
+    // Optionally, hide after a short delay
+    clearTimeout(scrollPercent._hideTimeout);
+    scrollPercent._hideTimeout = setTimeout(() => {
+        scrollPercent.style.display = 'none';
+    }, 1000);
+});
+
+// Move scroll percent to cursor position inside #CONTENT
+content.addEventListener('mousemove', function(e) {
+    const rect = content.getBoundingClientRect();
+    scrollPercent.style.left = (e.clientX + 15) + 'px';
+    scrollPercent.style.top = (e.clientY - 10) + 'px';
+});
