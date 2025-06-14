@@ -15,8 +15,13 @@ background-attachment:fixed;
 background-size:cover;
  position: relative;
 z-index: 0;
+overflow-x: hidden;
+left: 0;
+right: 0;
+}
 
-
+html {
+  scroll-behavior: smooth;
 }
 
 @font-face{
@@ -322,13 +327,16 @@ overflow: hidden;
     height: 90vh;
     width: 1000px;
     text-align: center;
-    overflow-y: scroll;
+   
   scrollbar-color: black;
-  
+ 
+  overflow: auto;
+
+}
     
  
     
-}
+
 
 #Services{
   width:40%;
@@ -343,7 +351,8 @@ flex-direction: column;
 border-radius: 60px;
 justify-content: center;
 align-items: center;
-padding-top: 70px;
+padding-top: 35px;
+padding-bottom: 35px;
      animation: appear  linear;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
@@ -508,7 +517,7 @@ font-family: apple;
 }
 
 footer{
-    background-color:var(--accent-color);
+    background-color:black;
     width: 100%;
     height: 120px;
     
@@ -606,12 +615,15 @@ footer{
   top: 0;
   justify-self: center;
   align-self: center;
+
   width: 100%;
+    height: 110vh;
   box-shadow: none;
-  margin-top: -40px;
+ margin-top: -60px;
   justify-content: center;
   transform: translatey(0px);
   box-shadow: 0 2px 16px rgba(214, 210, 210, 0.356);
+    border-radius: 50px;
 }
 .navigation{
  width: 90%;
@@ -622,8 +634,8 @@ justify-content: space-between;
 padding-right: 0px;
 margin: 0;
 float: none;
-font-size: 12px;
-margin-right: 29px;
+font-size: 10px;
+
 
 }
 .navigation a{
@@ -707,8 +719,10 @@ align-self: center;
 }
 #proj{
 width: 170px;
-  border-radius: 30px;
+ border-radius:  30px 0px 0px 30px;
   font-size: 9px;
+  padding-bottom: 10px;
+  padding-top: 60px;
 
 }
 
@@ -716,14 +730,16 @@ width: 170px;
   width: 120px;
   text-align: center;
   justify-self: center;
+ 
 }
 
 #Services{
   width: 170px;
- border-radius: 30px;
+border-radius:  30px 0px 0px 30px;
    overflow-y: scroll;
 font-size: 11px;
-padding-top: -80px;
+padding-top: 70px;
+padding-bottom:0px ;
 
 
 }
@@ -771,11 +787,13 @@ padding-top: -80px;
   justify-self: center;
   align-self: center;
   width: 100%;
+  height: 110vh;
   box-shadow: none;
-  margin-top: -40px;
+ margin-top: -60px;
   justify-content: center;
   transform: translatey(0px);
   box-shadow: 0 2px 16px rgba(214, 210, 210, 0.356);
+  border-radius: 50px;
 }
 .navigation{
  width: 90%;
@@ -870,18 +888,20 @@ align-self: center;
 }
 #proj{
 width: 170px;
-  border-radius: 30px;
+border-radius:  30px 0px 0px 30px;
   font-size: 9px;
-
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 #proj p{
   width: 150px;
+
 }
 
 #Services{
   width: 170px;
- border-radius: 30px;
+ border-radius:  30px 0px 0px 30px;
    overflow-y: scroll;
 font-size: 11px;
 padding-top: -60px;
@@ -933,12 +953,14 @@ padding-top: -60px;
   top: 0;
   justify-self: center;
   align-self: center;
-  width: 100%;
+  width: 95%;
+  height: 110vh;
   box-shadow: none;
-  margin-top: -40px;
+ margin-top: -60px;
   justify-content: center;
   transform: translatey(0px);
   box-shadow: 0 2px 16px rgba(214, 210, 210, 0.356);
+  border-radius: 60px;
 }
 .navigation{
  width: 90%;
@@ -1031,18 +1053,28 @@ align-self: center;
 }
 #proj{
 font-size: 11px;
-  border-radius: 30px;
+  border-radius:  30px 0px 0px 30px;
+     text-align: center;
+      width: 180px;
+      padding-top: 0px;
+padding-bottom: 0px;
 }
 
 #proj p{
   width:150px ;
+  align-self: center;
+  text-align: center;
+  margin: 0%;
+  padding-bottom: 90px;
 }
 
 #Services{
- border-radius: 30px;
+  width: 180px;
+ border-radius: 30px 0px 0px 30px;
   overflow-y: scroll;
 font-size: 11px;
-padding-top: -60px;
+padding-top: 40px;
+padding-bottom: 35px;
 }
 #Contact{
   border-radius: 30px;
@@ -1083,8 +1115,9 @@ padding-top: -60px;
   justify-self: center;
   align-self: center;
   width: 100%;
+    height: 110vh;
   box-shadow: none;
-  margin-top: -40px;
+  margin-top: -60px;
   justify-content: center;
   transform: translatey(0px);
   box-shadow: 0 2px 16px rgba(214, 210, 210, 0.356);
@@ -1191,6 +1224,16 @@ justify-content: center;
   width: 95%;
 }
 
+.cta-wrap{
+  display: flex;
+
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  margin-top: 50px;
+}
 
 
 
@@ -1336,7 +1379,11 @@ justify-content: center;
   width: 95%;
 }
 
-
+.cta-wrap{
+  justify-self: center;
+  align-self: center;
+  float: none;
+}
 
 
 

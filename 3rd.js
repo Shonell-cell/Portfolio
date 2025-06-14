@@ -1,18 +1,7 @@
 const toggleSwitch = document.getElementById('darkModeSwitch');
 const root = document.documentElement;
 
-// On page load, set theme from localStorage (if exists)
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-  root.setAttribute('data-theme', savedTheme);
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark');
-    toggleSwitch.checked = true;
-  } else {
-    document.body.classList.remove('dark');
-    toggleSwitch.checked = false;
-  }
-} else {
+
   // Only use time-based logic if no saved theme
   const now = new Date();
   if (now.getHours() >= 6 && now.getHours() < 18) {
@@ -26,19 +15,9 @@ if (savedTheme) {
     document.body.classList.add('dark');
     toggleSwitch.checked = true;
   }
-}
 
-// Toggle theme and save preference
-toggleSwitch.addEventListener('change', () => {
-  const newTheme = toggleSwitch.checked ? 'dark' : 'light';
-  root.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-  if (newTheme === 'dark') {
-    document.body.classList.add('dark');
-  } else {
-    document.body.classList.remove('dark');
-  }
-});
+
+
 
 // ...your scroll percent code...
 const content = document.getElementById('CONTENT');
