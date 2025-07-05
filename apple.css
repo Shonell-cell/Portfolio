@@ -1,0 +1,597 @@
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face{
+    font-family: outfit;
+    src: url(fonts/fonts/Outfit-Regular.ttf);
+}
+
+body{
+   
+font-family: outfit;
+cursor: crosshair;
+background-color: rgb(255, 255, 255)
+}
+
+.spacer{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(0, 0, 0) ;
+    position: sticky;
+top: 0;
+border-radius: 40px;
+
+}
+.bth{
+    margin-left: 700px;
+}
+
+.nav:hover{
+    scale: 1.2;
+    margin-top: 14px;
+    transition: 0.1s ease-in;
+    transition: 0.1s ease-out ;
+
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.whp{
+height:100vh;
+background-color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+color: rgb(0, 0, 0);
+position: sticky;
+top: 0;
+    
+}
+
+.whp h1{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 60px;
+    animation-name: ap;
+    animation-duration: 3.5s;
+
+}
+.whp #gg{
+    margin-top: -30px;
+     animation-name: ap;
+    animation-duration: 3.5s;
+
+}
+.whp button{
+    background-color:rgba(202, 202, 202, 0.4) ;
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin-left: 900px;
+    margin-top: 100px;
+    border-color: rgb(0, 0, 0);
+    animation-name: button;
+    animation-duration: 3.5s;
+
+}
+.whp button:hover{
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(255, 249, 249);
+    transition: 1s ease-in-out;
+    color: white;
+}
+.whp #price{
+    margin-left: 900px;
+    margin-top: -60px;
+     animation-name: button;
+    animation-duration: 3.5s;
+}
+.product{
+    width: 50%;
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+    transition: 2s ease-in-out;
+
+}
+.pp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: black;
+    border-radius: 40px;
+  margin-top: -100vh;
+    width: 100%;
+}
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction:column;
+}
+.about p{
+    width: 500px;
+    margin-left: 40px;
+    margin-top: 100px;
+     animation: appearr  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+
+
+}
+  .about h1{
+         animation: appearr  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    }
+
+.spec{
+    width: 40%;
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+    transition: 2s ease-in-out;
+
+}
+.other{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color:  rgb(82, 255, 2);
+    justify-content: center;
+    align-items: center;
+    gap:17%;
+     animation: appearr  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+   
+
+    
+}
+.tech{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:6%;
+    color: white;
+         animation: appearr  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    
+
+}
+
+@keyframes ap{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes button{
+    from{
+        opacity: 0;
+    
+    }
+    to{
+        opacity: 1;
+       
+    }
+}
+ @keyframes appear{
+    from{
+        opacity: 0;
+       
+    }
+    to{
+        opacity: 1;
+        
+    }
+}
+ @keyframes appearr{
+    from{
+        opacity: 0;
+       scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        
+    }
+}
+@keyframes nav{
+    from{
+        opacity: 0;
+        scale:0
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        
+    }
+}
+
+@media (max-width:1920px) and (min-width: 1200px) {
+    html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face{
+    font-family: outfit;
+    src: url(fonts/fonts/Outfit-Regular.ttf);
+}
+
+body{
+   
+font-family: outfit;
+cursor: crosshair;
+background-color: rgb(255, 255, 255)
+}
+.nav{
+    color: black;
+    position:fixed;
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 17%;
+    height: 82px;
+    background: rgba(173, 173, 173, 0.4);        
+    backdrop-filter: blur(12px);                 
+    -webkit-backdrop-filter: blur(12px);         
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);    
+    z-index: 1000;   
+    top:0;         
+    animation-name: nav;
+    animation-duration: 2s;     
+border-radius: 40px;
+margin-top: 7px;
+transition: background-color 0.5s ease;
+
+}
+.spacer{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(0, 0, 0) ;
+    position: sticky;
+top: 0;
+border-radius: 40px;
+}
+
+
+.nav:hover{
+    scale: 1.2;
+    margin-top: 14px;
+    transition: 0.1s ease-in;
+    transition: 0.1s ease-out ;
+
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.whp{
+height:100vh;
+background-color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+color: rgb(0, 0, 0);
+position: sticky;
+top: 0;
+    
+}
+
+.whp h1{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 60px;
+    animation-name: ap;
+    animation-duration: 3.5s;
+
+}
+.whp #gg{
+    margin-top: -30px;
+     animation-name: ap;
+    animation-duration: 3.5s;
+
+}
+.whp button{
+    background-color:rgba(202, 202, 202, 0.4) ;
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin-left: 900px;
+    margin-top: 100px;
+    border-color: rgb(0, 0, 0);
+    animation-name: button;
+    animation-duration: 3.5s;
+
+}
+.whp button:hover{
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(255, 249, 249);
+    transition: 1s ease-in-out;
+    color: white;
+}
+.whp #price{
+    margin-left: 900px;
+    margin-top: -60px;
+     animation-name: button;
+    animation-duration: 3.5s;
+}
+.product{
+    width: 50%;
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+    transition: 2s ease-in-out;
+
+}
+.pp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: black;
+    border-radius: 40px;
+  margin-top: -100vh;
+    width: 100%;
+}
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction:column;
+}
+.about p{
+    width: 500px;
+    margin-left: 40px;
+    margin-top: 100px;
+     animation: appearr  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+
+
+}
+  .about h1{
+         animation: appearr  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    }
+
+.spec{
+    width: 40%;
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+    transition: 2s ease-in-out;
+
+}
+.other{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color:  rgb(82, 255, 2);
+    justify-content: center;
+    align-items: center;
+    gap:17%;
+     animation: appearr  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+   
+
+    
+}
+.tech{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:6%;
+    color: white;
+         animation: appearr  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    
+
+}
+
+@keyframes ap{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes button{
+    from{
+        opacity: 0;
+    
+    }
+    to{
+        opacity: 1;
+       
+    }
+}
+ @keyframes appear{
+    from{
+        opacity: 0;
+       
+    }
+    to{
+        opacity: 1;
+        
+    }
+}
+ @keyframes appearr{
+    from{
+        opacity: 0;
+       scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        
+    }
+}
+@keyframes nav{
+    from{
+        opacity: 0;
+        scale:0
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        
+    }
+}
+}
+@media (max-width: 600px) {
+    .about p{
+margin-left: 60px;
+margin-top: -5px;
+font-size: 13px;
+width: 400px;
+    }
+    .other{
+        gap: 4%;
+    }
+.other p{
+    font-size: 12px;
+    
+}
+.tech{
+    font-size: 13px;
+    justify-content: center;
+    gap: 2%;
+}
+.whp button{
+    margin-left: 200px;
+}
+.whp #price{
+    margin-left: 200px;
+}
+#one{
+    padding-left: 30px;
+}
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+       .about p{
+margin-left: 60px;
+margin-top: -5px;
+font-size: 13px;
+width: 500px;
+    }
+    .other{
+        gap: 4%;
+    }
+.other p{
+    font-size: 12px;
+    
+}
+.whp button{
+    margin-left: 450px;
+}
+.whp #price{
+    margin-left: 450px;
+}
+.tech{
+    font-size: 13px;
+    justify-content: center;
+    gap: 2%;
+}
+#one{
+    padding-left: 30px;
+}
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+        .about p{
+            
+margin-left: 140px;
+margin-top: -5px;
+font-size: 17px;
+
+width: 500px;
+    }
+    .other{
+        gap: 4%;
+    }
+.other p{
+    font-size: 17px;
+    
+}
+.whp button{
+    margin-left: 650px;
+}
+.whp #price{
+    margin-left: 650px;
+}
+.tech{
+    font-size: 17px;
+    justify-content: center;
+    gap: 2%;
+}
+#one{
+    padding-left: 30px;
+}
+}
+
+@media (max-width: 1200px) and (min-width: 1024px) {
+           .about p{
+            
+margin-left: 140px;
+margin-top: -5px;
+font-size: 17px;
+
+width: 500px;
+    }
+    .other{
+        gap: 4%;
+    }
+.other p{
+    font-size: 17px;
+    
+}
+.tech{
+    font-size: 17px;
+    justify-content: center;
+    gap: 2%;
+}
+#one{
+    padding-left: 30px;
+}
+}
