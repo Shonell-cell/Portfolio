@@ -101,4 +101,83 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
         
     });
   });
-  
+
+
+
+
+
+
+  document.getElementById('img').addEventListener('mouseover',function(){
+let text = document.getElementById('text')
+
+
+document.getElementById('img2').style.opacity="0.1" 
+document.getElementById('img3').style.opacity="0.1"
+
+
+
+
+
+  })
+  document.getElementById('img').addEventListener('mouseleave',function(){
+let text = document.getElementById('text')
+text.textContent = ""
+document.getElementById('img2').style.opacity="1" 
+document.getElementById('img3').style.opacity="1" 
+
+
+
+
+
+  })
+
+
+
+  document.getElementById('img2').addEventListener('mouseover',function(){
+let text = document.getElementById('text')
+
+
+document.getElementById('img').style.opacity="0.1" 
+document.getElementById('img3').style.opacity="0.1"
+
+
+
+
+
+  })
+  document.getElementById('img2').addEventListener('mouseleave',function(){
+let text = document.getElementById('text')
+text.textContent = ""
+document.getElementById('img').style.opacity="1" 
+document.getElementById('img3').style.opacity="1" 
+
+
+
+
+
+  })
+
+
+  document.getElementById('img3').addEventListener('mouseover',function(){
+let text = document.getElementById('text')
+
+
+document.getElementById('img2').style.opacity="0.1" 
+
+
+
+
+
+
+  })
+  document.getElementById('img3').addEventListener('mouseleave',function(){
+let text = document.getElementById('text')
+text.textContent = ""
+document.getElementById('img2').style.opacity="1" 
+
+
+
+
+
+
+  })
