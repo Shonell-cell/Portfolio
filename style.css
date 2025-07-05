@@ -372,7 +372,16 @@ body.scrolled #nav {
       
 }
 #text{
-    text-align: center;
+   width: 20%;
+margin: 100px;
+margin-left: 0px;
+margin-bottom: -100px;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    cursor: pointer;
+ justify-self: center;
+  align-self: center;
 }
 #img{
     border-radius:  30px;
