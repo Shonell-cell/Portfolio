@@ -29,6 +29,23 @@ window.addEventListener('scroll', () => {
       }
     });
 
+window.addEventListener('scroll', () => {
+      if (window.scrollY > 2100) { 
+        document.body.classList.add('scrolled2');
+      } else {
+        document.body.classList.remove('scrolled2');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 3100) { 
+        document.body.classList.add('scrolled3');
+      } else {
+        document.body.classList.remove('scrolled3');
+      }
+    });
+
+
     const scrollPercent = document.getElementById('scroll-percent');
     window.addEventListener('scroll', function() {
     const scrollTop = window.scrollY;
