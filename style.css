@@ -1,13 +1,14 @@
 @font-face{
-    font-family: apple;
-    src: url(fonts/SFPRODISPLAYREGULAR.OTF)
+    font-family: mojang;
+  src: url(fonts/Minecraftia-Regular.ttf);
+    text-align: center;
 }
 body{
   
  overflow-x: hidden;
    color: rgb(255, 255, 255);
     background-color:rgb(0, 0, 0);
-    font-family: apple;
+    font-family: mojang;
 width: 100%;
      transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -71,7 +72,7 @@ h1{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-family: apple;
+   
     justify-self: center;
     width: 100%;
 
@@ -119,7 +120,7 @@ font-size: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: apple;
+
 }
 
 @keyframes bounce {
@@ -141,7 +142,7 @@ background-color: rgb(0, 0, 0);
     z-index: 1;
 }
 #name{
-    font-family:apple;
+    
     text-align: center;
       font-size: 2.5rem;
       transition: font-size 0.1s linear;
@@ -249,7 +250,7 @@ left: 0cap;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: apple;
+   
     gap: 70px;
  font-weight: 100;
     font-size: clamp(11px ,2dvw ,1.5vh);
@@ -272,7 +273,7 @@ body.scrolled #nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: apple;
+    
   
  font-weight: 100;
 
@@ -302,7 +303,7 @@ body.scrolled #nav {
     flex-direction:row;
     align-items: center;
     text-align: center;
-    font-family: apple;
+   
     justify-self: center;
     gap: 50px;
     
@@ -318,7 +319,7 @@ body.scrolled #nav {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    font-family: apple;
+   
     justify-self: center;
     gap: 50px;
 }
@@ -327,7 +328,7 @@ body.scrolled #nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-family: apple;
+   
     justify-self: center;
     gap: 20px;
 
@@ -355,6 +356,7 @@ body.scrolled #nav {
     backdrop-filter: blur(12px);                 
     -webkit-backdrop-filter: blur(12px);         
     box-shadow: 0 2px 16px rgba(0,0,0,0.06);   
+    font-family: mojang;
     
 }
 #message{
@@ -365,13 +367,13 @@ body.scrolled #nav {
     backdrop-filter: blur(12px);                 
     -webkit-backdrop-filter: blur(12px);         
     box-shadow: 0 2px 16px rgba(0,0,0,0.06);   
-    
+     font-family: mojang;
 }
 #submit{
      width: 200px;
     height: 30px;
       border-radius: 10px;
-     
+      font-family: mojang;
       border-color:white ;
       margin-top: 5px;
 }
@@ -482,6 +484,9 @@ width: 700px;
 
 
 @media (max-width: 600px){
+body{
+    text-align: center;
+}
 
 #hero{
     width: 100%;
