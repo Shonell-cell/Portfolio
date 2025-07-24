@@ -1,0 +1,59 @@
+body{
+    background-color:black;
+      font-family: mojang;
+}
+@font-face{
+    font-family: mojang;
+  src: url(fonts/Minecraftia-Regular.ttf);
+    text-align: center;
+}
+#img{
+border: 2px solid rgb(72, 255, 0);
+width: 300px;
+    height: auto;
+    padding: 0cap;
+}
+#pr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:100px;
+}
+
+
+#ll3{
+   font-size: 15vw;
+   text-align:center;
+   color:white;
+}
+
+
+
+
+#img2{
+border: 2px solid rgb(72, 255, 0);
+width: 300px;
+    height: auto;
+    padding: 0cap;
+    
+}
+
+
+#img3{
+   border: 2px solid rgb(72, 255, 0);
+width: 300px;
+    height: auto;
+    padding: 0cap;
+  
+    height: auto;
+    padding: 0cap;
+        
+}
+
+
+@media (max-width: 600px){
+    #pr{
+        flex-direction: column;
+    }
+}
