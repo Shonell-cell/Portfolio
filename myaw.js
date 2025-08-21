@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
   const scaleFactor = scrollTop / maxScroll;
   const newSize = minSize + (maxSize - minSize) * scaleFactor;
   text.style.fontSize = `${newSize}rem`;
-  text.style.color = `rgba(94, 7, 7, ${1 - scaleFactor})`;
+  text.style.color = `rgba(0, 0, 0, ${1 - scaleFactor})`;
 
   if (window.scrollY > maxScroll) {
     hero.classList.add("absolute");
@@ -30,21 +30,7 @@ window.addEventListener('scroll', () => {
       }
     });
 
-window.addEventListener('scroll', () => {
-      if (window.scrollY > 2100) { 
-        document.body.classList.add('scrolled2');
-      } else {
-        document.body.classList.remove('scrolled2');
-      }
-    });
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 3100) { 
-        document.body.classList.add('scrolled3');
-      } else {
-        document.body.classList.remove('scrolled3');
-      }
-    });
 
 
     const scrollPercent = document.getElementById('scroll-percent');
