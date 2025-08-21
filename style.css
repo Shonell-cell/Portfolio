@@ -496,7 +496,7 @@ width: 300px;
 #ll3p{
    font-size: 15vw;
    text-align:center;
-   color:white;
+   color:rgb(0, 0, 0);
 }
 
 
@@ -589,14 +589,14 @@ padding: 20px;
 #nav {
   overflow-x: hidden;
     gap: 4%;
-    left: 0%;
+    
    align-items: center;
-    margin: 0cap;
-    width:100%;
+
+    width:80%;
     font-size: 11px;
    padding-left: 0;
 float: none;
-right: 0;
+
    justify-content: center;
  z-index: 2100;
 text-align: center;
@@ -607,6 +607,12 @@ text-align: center;
     padding:0;
 
 }
+#nav{
+    scale: 0.7;
+    margin-left: 0cap;
+    margin-right: 0cap;
+    padding: 0cap;
+}
 #scroll-hint{
     display: none;
 }
@@ -616,7 +622,7 @@ body.scrolled #nav  {
  overflow-x: hidden;
     display: flex;
  gap: 20px;
-    left: 0;
+   
    align-items: center;
     margin: 0cap;
     padding: 0cap;
@@ -624,9 +630,9 @@ body.scrolled #nav  {
     font-size: 11px;
    padding-left: 0;
 float: none;
-right: 0;
+
    justify-content: center;
- padding-right: 100px;
+
 
 }
 
@@ -688,7 +694,10 @@ body.scrolled #nav a{
 @media (max-width: 950px) and (min-width:601px){
 
 
-
+#prp{
+       flex-direction: column;
+      
+    }
 
 #first{
     flex-direction: column;
@@ -726,9 +735,9 @@ padding: 20px;
 #nav {
     justify-content: center;
     gap: 4%;
-    left: 0%;
    
-    margin: 0cap;
+   
+    
     width:100%;
     font-size: 11px;
    padding-left: 0;
@@ -821,15 +830,15 @@ padding: 20px;
 #nav {
     justify-content: center;
     gap: 7%;
-    left: 0%;
+  
    
-    margin: 0cap;
+   
     width:100%;
     font-size: 14px;
    padding-left: 0;
 
    justify-content: center;
- 
+
 text-align: center;
 }
 

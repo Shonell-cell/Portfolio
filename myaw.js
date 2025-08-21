@@ -32,23 +32,6 @@ window.addEventListener('scroll', () => {
 
 
 
-
-    const scrollPercent = document.getElementById('scroll-percent');
-    window.addEventListener('scroll', function() {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const percent = Math.round((scrollTop / docHeight) * 100);
-    scrollPercent.textContent = percent + '%';
-    scrollPercent.style.display = 'block';
-    clearTimeout(scrollPercent._hideTimeout);
-    scrollPercent._hideTimeout = setTimeout(() => {
-        scrollPercent.style.display = 'none';
-    }, 1000);
-});
-window.addEventListener('mousemove', function(e) {
-    scrollPercent.style.left = (e.clientX + 15) + 'px';
-    scrollPercent.style.top = (e.clientY - 10) + 'px';
-});
 const services = document.getElementById("block");
 services.addEventListener("click",function(){
 
