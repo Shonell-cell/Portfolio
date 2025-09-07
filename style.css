@@ -1,6 +1,6 @@
 @font-face{
     font-family: mojang;
-  src: url(fonts/Minecraftia-Regular.ttf);
+  src: url(fonts/fonts/Outfit-Regular.ttf);
   
 }
 body{
@@ -478,7 +478,7 @@ width: 700px;
 
 
 #imgp{
-border: 2px solid rgb(72, 255, 0);
+border: 2px solid rgb(0, 0, 0);
 width: 300px;
     height: auto;
     padding: 0cap;
@@ -503,7 +503,7 @@ width: 300px;
 
 
 #img2p{
-border: 2px solid rgb(72, 255, 0);
+border: 2px solid rgb(0, 0, 0);
 width: 300px;
     height: auto;
     padding: 0cap;
@@ -512,7 +512,7 @@ width: 300px;
 
 
 #img3p{
-   border: 2px solid rgb(72, 255, 0);
+   border: 2px solid rgb(0, 0, 0);
 width: 300px;
     height: auto;
     padding: 0cap;
@@ -592,7 +592,7 @@ padding: 20px;
     
    align-items: center;
 
-    width:80%;
+    width:100%;
     font-size: 11px;
    padding-left: 0;
 float: none;
@@ -789,7 +789,9 @@ text-align: center;
 @media (max-width: 1024px) and (min-width:951px){
 
 
-
+#hero{
+    height: 90vh;
+}
 #prp{
        
          gap:30px;
