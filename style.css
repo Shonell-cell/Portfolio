@@ -224,6 +224,7 @@ body.scrolled2 {
     justify-content: center;
     align-items: center;
    
+   
 }
 
 #p p{
@@ -478,7 +479,7 @@ width: 700px;
 
 
 #imgp{
-border: 2px solid rgb(0, 0, 0);
+border: 2px solid rgb(255, 255, 255);
 width: 300px;
     height: auto;
     padding: 0cap;
@@ -487,23 +488,90 @@ width: 300px;
 #prp{
     display: flex;
     justify-content: center;
-    align-items: center;
+ 
     flex-direction: row;
-    gap:100px;
+    gap:70px;
+   
+    height: 60vh;
+}
+#prp p{
+    width: 60%;
+   color: #000000;
+
+}
+#prp h3{
+    color: #000000;
+    
+}
+#prp a{
+    text-decoration: none;
+}
+#candle{
+background-color: rgba(0, 0, 0, 0.096);
+height: 60vh;
+width: 350px;
+display: flex;
+flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border-radius: 70px;
+}
+#candle:hover{
+    scale: 1.1;
+    transition: 0.4s;
 }
 
+#airpods:hover{
+    scale: 1.1;
+    transition: 0.4s;
+}
+
+#clock:hover{
+    scale: 1.1;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+#airpods{
+   background-color: rgba(0, 0, 0, 0.096);
+height: 60vh;
+width: 350px;
+display: flex;
+flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border-radius: 70px;
+}
+#clock{
+      background-color: rgba(0, 0, 0, 0.096);
+height: 60vh;
+width: 350px;
+display: flex;
+flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border-radius: 70px;
+}
 
 #ll3p{
    font-size: 15vw;
    text-align:center;
-   color:rgb(0, 0, 0);
+ 
 }
 
 
 
 
 #img2p{
-border: 2px solid rgb(0, 0, 0);
+border: 2px solid rgb(255, 255, 255);
 width: 300px;
     height: auto;
     padding: 0cap;
@@ -512,7 +580,7 @@ width: 300px;
 
 
 #img3p{
-   border: 2px solid rgb(0, 0, 0);
+   border: 2px solid rgb(255, 255, 255);
 width: 300px;
     height: auto;
     padding: 0cap;
@@ -536,9 +604,26 @@ body{
 }
  #prp{
         flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 200vh;
 
     }
 
+#candle:hover{
+    scale: 1;
+    transition: 0.4s;
+}
+
+#airpods:hover{
+    scale: 1;
+    transition: 0.4s;
+}
+
+#clock:hover{
+    scale: 1;
+    transition: 0.4s;
+}
 #hero{
     width: 100%;
     right: 0%;
@@ -575,6 +660,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 
 #second p{
    width:80% ;
@@ -695,8 +781,11 @@ body.scrolled #nav a{
 
 
 #prp{
-       flex-direction: column;
-      
+    
+              flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 200vh;
     }
 
 #first{
@@ -746,7 +835,20 @@ padding: 20px;
  
 text-align: center;
 }
+#candle:hover{
+    scale: 1;
+    transition: 0.4s;
+}
 
+#airpods:hover{
+    scale: 1;
+    transition: 0.4s;
+}
+
+#clock:hover{
+    scale: 1;
+    transition: 0.4s;
+}
 
 
 #username{
@@ -793,8 +895,13 @@ text-align: center;
     height: 90vh;
 }
 #prp{
-       
-         gap:30px;
+          flex-direction: column;        
+justify-content: center;
+align-items: center;
+height: 200vh;
+         width: 100%;
+         gap: 15px;
+      
     }
 #first{
     flex-direction: column;
@@ -825,7 +932,27 @@ text-align: center;
 #projects p{
 padding: 20px;
 }
+#candle:hover{
+    scale: 1;
+    transition: 0.4s;
+}
+#candle,#airpods,#clock{
+    
+    width: 400px;
+    height: 60vh;
+}
+#airpods:hover{
+    scale: 1;
+    transition: 0.4s;
+}
 
+#clock:hover{
+    scale: 1;
+    transition: 0.4s;
+}
+#clock p{
+    font-size: 15px;
+}
 #block{
     width: 100%;
 }
