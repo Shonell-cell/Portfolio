@@ -14,14 +14,51 @@ width: 100%;
        text-align: center;
 }
 #js{
-    color: rgb(54, 255, 47);
+    color: rgb(0, 0, 0);
+    background-color: rgb(54, 255, 47);
+    padding: 20px 20px;
+    border-radius: 25px;
 }
+
+#ht{
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 20px 20px;
+    border-radius: 25px;
+}
+
+#css{
+    color: rgb(0, 0, 0);
+    background-color: #ff7300;
+    padding: 20px 20px;
+    border-radius: 25px;
+}
+#sks li{
+    list-style: none;
+   
+}
+#rd{
+    color: rgb(0, 0, 0);
+    background-color: #939597;
+    padding: 20px 20px;
+    border-radius: 25px;
+}
+
+
+
 #react{
-    color: rgb(0, 153, 255);
+    color: rgb(0, 0, 0);
+      background-color: rgb(0, 153, 255);
+    padding: 20px 20px;
+    border-radius: 25px;
 }
 #py{
-    color:yellow ;
+    color:rgb(0, 0, 0) ;
+      background-color: yellow;
+    padding: 20px 20px;
+    border-radius: 25px;
 }
+
 
 #gg{
     color: #ffffff;
@@ -205,7 +242,10 @@ body.scrolled2 {
 
 #sks{
     text-align: center;
-    width: 100%;
+ padding: 60px 60px;
+    background-color: rgba(0, 0, 0, 0.096);
+    width: 90%;
+    border-radius: 55px;
 }
 
 #sks ul{
@@ -610,6 +650,15 @@ height: 200vh;
 
     }
 
+#candle{
+    scale:0.95
+}
+#clock{
+    scale:0.95
+}
+#airpods{
+    scale:0.95
+}
 #candle:hover{
     scale: 1;
     transition: 0.4s;
@@ -636,7 +685,12 @@ height: 200vh;
     align-items: center;
     gap: 50px;
 }
-
+#sks{
+    background-color: rgba(0, 0, 0, 0.096);
+    width: 85%;
+    border-radius: 55px;
+    padding:0;
+}
 #first{
     flex-direction: column;
 }
@@ -679,7 +733,7 @@ padding: 20px;
    align-items: center;
 
     width:100%;
-    font-size: 11px;
+    font-size: 15px;
    padding-left: 0;
 float: none;
 
@@ -713,7 +767,7 @@ body.scrolled #nav  {
     margin: 0cap;
     padding: 0cap;
     width:100% ;
-    font-size: 11px;
+    font-size: 15px;
    padding-left: 0;
 float: none;
 
@@ -909,7 +963,12 @@ height: 200vh;
 #first p{
    width:80% ;
 }
-
+#sks{
+    
+    padding:0;
+    padding-bottom: 90px;
+    border-radius: 70px;
+}
 #second{
     flex-direction: column;
 }
