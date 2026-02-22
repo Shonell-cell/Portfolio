@@ -55,11 +55,14 @@ color: rgb(0, 0, 0);
       bottom: 0;
     display: none;
     grid-template-columns: repeat(2,2fr);
+ 
        gap: 20px;
        padding: 30px;
          align-items: center;
       justify-content: center;
       justify-self: center;
+     
+
                                   
  
 }
