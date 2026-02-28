@@ -15,7 +15,20 @@ overflow-x: hidden;
 
 
 }
+@keyframes trans{
+    from{
+        opacity: 0;
+        
+        
+         
+    }
+    to{
+        opacity: 1;
+     
+       
+    }
 
+}
 
 #nav{
     position: fixed;
@@ -41,7 +54,7 @@ display: flex;
      border-radius: 40px;
      margin-bottom: 20px;
      text-decoration: none;
-  
+ 
     
      
 }
@@ -55,7 +68,7 @@ color: rgb(0, 0, 0);
       bottom: 0;
     display: none;
     grid-template-columns: repeat(2,2fr);
- 
+
        gap: 20px;
        padding: 30px;
          align-items: center;
@@ -93,6 +106,9 @@ color:rgb(0, 255, 42);
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: start;
+    animation: trans  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 55%;
 }
 #hero{
   display: flex;
@@ -113,6 +129,9 @@ justify-self: center;
     justify-self: center;
     align-self: center;
     width:50%   ;
+      animation: trans  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 55%;
 }
 
 #bd li{
@@ -125,6 +144,9 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 color: #000000;
+  animation: trans  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 55%;
 }
 #skills{
   color:rgb(0, 255, 42)
