@@ -214,7 +214,7 @@ html {
 }
 .divider {
   width: 1px;
-  background-color: rgb(255, 0, 179); /* your pink */
+  background-color: rgb(255, 255, 255); /* your pink */
   align-self: stretch; /* stretches full height of the row */
   opacity: 0.4; /* keeps it subtle */
   z-index: 53; /* ensures it sits above the grain */
