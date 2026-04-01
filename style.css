@@ -390,7 +390,9 @@ align-items: center;
 
 
 @media (max-width: 600px){
-
+#loader{
+  text-align: center;
+}
 p{
     width: 100%;
 }
