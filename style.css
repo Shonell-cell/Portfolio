@@ -1,6 +1,6 @@
 body{
     font-family: outfit;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 253, 253);
    color:rgb(255, 0, 179);
 }
 
@@ -308,7 +308,7 @@ text-decoration: none;
 }
 
 #home{
-
+background-color: #ffffff;
    
     height: 90vh;
     width: 50%;
@@ -392,7 +392,9 @@ font-size: 100px;
     border-radius: 0;
     
 }
-
+#nav{
+height: 5vh;
+}
 .split{
     width: 100%;
 }
