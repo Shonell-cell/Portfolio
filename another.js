@@ -21,3 +21,11 @@ function scrollToContact() {
 }
 document.getElementById('footer').querySelector('p').innerHTML = 
   `© ${new Date().getFullYear()} Shonell Shanu. All rights reserved.`;
+
+  const video = document.querySelector('video');
+const loader = document.getElementById('loader');
+
+video.addEventListener('canplaythrough', () => {
+  loader.style.opacity = '0';
+  setTimeout(() => loader.style.display = 'none', 500);
+});

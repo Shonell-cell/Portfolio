@@ -263,6 +263,20 @@ html {
     margin-top: 200px;
    will-change: transform;
 }
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255,0,179);
+  font-size: 13px;
+  letter-spacing: 3px;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
 #nav{
 width: 100%;
 left: 0%;
