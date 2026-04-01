@@ -4,6 +4,12 @@ body{
    color:rgb(255, 0, 179);
 }
 
+.outfit{
+  font-family: "outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 #hero{
     position: relative;
     background-color:  rgb(255, 255, 255);
@@ -367,10 +373,7 @@ align-items: center;
 
 
 
-@font-face{
-    font-family: outfit;
-    src: url(fonts/fonts/Outfit-Regular.ttf);
-}
+
 
 @media (max-width: 600px){
 
@@ -387,11 +390,13 @@ font-size: 100px;
 }
 #home video{
   border-radius: 0;
+
   
 }
 #about{
     width: 100%;
     border-radius: 0;
+
 
 }
 #nav{
@@ -412,7 +417,7 @@ height: 5vh;
     width: 100%;
     padding: 0;
     margin: 0;
-    
+  scale: 0.6;
     animation-name: none;
 }
 .port{
